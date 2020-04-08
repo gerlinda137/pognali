@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Погнали</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
-  </head>
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Погнали</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
 <body>
   <header class="page-header">
-    <div class="page-header__wrapper">
+    <div class="page-header__container">
       <a class="page-header__logo-link">
-        <img src="https://via.placeholder.com/100x19" alt="Погнали" class="page-header__logo-img" width="100" height="19">
+        <img src="https://via.placeholder.com/100x19" alt="Погнали" class="page-header__logo-img" width="100"
+          height="19">
       </a>
-      <button class="main-mav__toggle-button">Открыть меню </button>
+      <button class="open-nav__toggle-button" type="button">Открыть меню </button>
     </div>
     <nav class="main-nav">
       <ul class="main-nav__list">
@@ -20,33 +23,29 @@
           <a>О сервисе</a>
         </li>
         <li class="main-nav__list-item">
-          <a>Направления</a>
+          <a href="source/html/form.html">Направления</a>
         </li>
         <li class="main-nav__list-item">
-          <a>Попутчики</a>
+          <a href="source/html/catalog.html">Попутчики</a>
         </li>
       </ul>
     </nav>
-    <div class="user-menu">
-      <button class="authorization">Авторизация</button>
-      <div class="contacts">
-        <ul class="contacts__list">
-          <li class="contacts__list-item">
-            <a class="contacts__phone" href="tel: 8 800 555-86-28">8 800 555-86-28</a>
+    <div class="toggle-menu">
+      <button class="authorization toggle-menu__authorization-button" type="button">Авторизация</button>
+        <ul class="toggle-contacts">
+          <li class="toggle-contacts__item">
+            <a class="toggle-contacts__phone" href="tel:88005558628">8 800 555-86-28</a>
           </li>
-          <li class="contacts__list-item">
-            <a class="contacts__mail" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          <li class="toggle-contacts__item">
+            <a class="toggle-contacts__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </li>
         </ul>
-      </div>
     </div>
-    <div class="social-media">
-      <ul class="social-media__list">
-        <li><a class="social-media_button" aria-label="facebook"></a></li>
-        <li><a class="social-media_button" aria-label="VK"></a></li>
-        <li><a class="social-media_button" aria-label="instagram"></a></li>
+      <ul class="social-media">
+        <li><a class="social-media__button facebook-button" aria-label="facebook"></a></li>
+        <li><a class="social-media__button vk-button" aria-label="VK"></a></li>
+        <li><a class="social-media__button instagram-button" aria-label="instagram"></a></li>
       </ul>
-    </div>
   </header>
   <main class="page-main">
     <h1 class="page-title">
@@ -54,17 +53,15 @@
       с крутыми попутчиками!
     </h1>
     <div class="user-menu">
-      <div class="contacts">
-        <ul class="contacts__list">
-          <li class="contacts__list-item">
+        <ul class="contacts">
+          <li class="contacts-item">
             <a class="contacts__phone" href="tel: 8 800 555-86-28">8 800 555-86-28</a>
           </li>
-          <li class="contacts__list-item">
+          <li class="contacts-item">
             <a class="contacts__mail" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </li>
         </ul>
-      </div>
-      <button class="authorization">Авторизация</button>
+      <button class="authorization user-menu__authorization-button" type="button">Авторизация</button>
     </div>
     <div class="expert-review">
       <q class="expert-review__quote">Лучшее приложение, что я видел в жизни!</q>
@@ -79,29 +76,62 @@
     <section class="about-service">
       <h2 class="about-service__title">О сервисе</h2>
       <p class="about-service__description">
-        Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
+        Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и
+        черпайте вдохновение в чужих.
+      </p>
+      <p class="about-service__description about-service__description--bold">
         <b>А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</b>
       </p>
     </section>
     <section class="destinations">
       <h2 class="destinations__title">Направления</h2>
       <p class="destinations__description">
-        Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
+        Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно
+        там заняться.
       </p>
-      <div class="destinations__cards-wrapper">
-        <ul class="destinations__cards-list">
+        <ul class="destinations-cards">
           <li class="destinations__card">
-            <img src="https://via.placeholder.com/270x110" alt="Thailand" class="destinations__card-image">
+            <img src="https://via.placeholder.com/270x110" alt="Thailand" class="destinations__card-image" width="270"
+              height="110">
+            <div class="destinations__card-info">
+              <h3 class="destinations__card-title">Таиланд</h3>
+              <p class="destinations__card-motto">Джунгли зовут!</p>
+            </div>
           </li>
           <li class="destinations__card">
-            <img src="https://via.placeholder.com/270x110" alt="France" class="destinations__card-image">
+            <img src="https://via.placeholder.com/270x110" alt="France" class="destinations__card-image" width="270"
+              height="110">
+            <div class="destinations__card-info">
+              <h3 class="destinations__card-title">Франция</h3>
+              <p class="destinations__card-motto">Трэ бьен, манифик!</p>
+            </div>
           </li>
           <li class="destinations__card">
-            <img src="https://via.placeholder.com/270x110" alt="Czech" class="destinations__card-image">
+            <img src="https://via.placeholder.com/270x110" alt="Czech" class="destinations__card-image" width="270"
+              height="110">
+            <div class="destinations__card-info">
+              <h3 class="destinations__card-title">Чехия</h3>
+              <p class="destinations__card-motto">Закоулки старой Европы</p>
+            </div>
           </li>
         </ul>
-      </div>
+      <button class="show-all__button" type="button">Показать все</button>
+    </section>
+    <section class="companions">
+      <h2 class="companions__title">Попутчики</h2>
+      <p class="companions__description">
+        Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут
+        для хайкинга.
+      </p>
+      <p>
+        <b class="companions__description companions__description--bold">Теперь можно легко найти единомышленников!</b>
+      </p>
+      <ul class="companions-list">
+        <li class="companions__card"></li>
+        <li class="companions__card"></li>
+      </ul>
     </section>
   </main>
 </body>
+
 </html>
