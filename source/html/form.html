@@ -53,6 +53,82 @@
       </li>
     </ul>
   </header>
+  <main class="form-main">
+    <h1 class="form-main__title">Направления</h1>
+    <section class="user-profile">
+      <div class="user-profile__level level-sign">
+        <span class="level-sign__number">80</span>
+        <span class="level-sign__signature">level</span>
+        <svg class="level-sign__image">
+          <circle class="level-sign__image-background" cx="57" cy="57" r="30"></circle>
+          <circle class="level-sign__image-progress" cx="57" cy="57" r="30"></circle>
+        </svg>
+      </div>
+      <img src="https://via.placeholder.com/90x100" width="90" height="100" alt="Ваше фото" class="user-profile__image">
+      <button class="user-profile__change-image" type="button">Сменить фото</button>
+      <h3 class="hashtags__title">Тэги</h3>
+      <ul class="hashtags user-profile__hashtags">
+        <li class="hashtags__item"><a class="hashtags-item__link">#бургер</a></li>
+        <li class="hashtags__item"><a class="hashtags-item__link">#бар</a></li>
+        <li class="hashtags__item"><a class="hashtags-item__link">#футбол</a></li>
+        <li class="hashtags__item"><a class="hashtags-item__link">#концерт</a></li>
+        <li class="hashtags__item"><a class="hashtags-item__link">#крафт</a></li>
+      </ul>
+      <h3 class="transport__title">
+        <ul class="transport user-profile__transport">
+          <li class="transport__item">
+            <input type="checkbox" name="plane" class="transport__plane visually-hidden" multiple checked>
+            <span class="transport__plane-icon"></span>
+          </li>
+          <li class="transport__item">
+            <input type="checkbox" name="proper-bus" class="transport__bus visually-hidden" multiple checked>
+            <span class="transport__bus-icon"></span>
+          </li>
+          <li class="transport__item">
+            <input type="checkbox" name="bike" class=" transport__bike visually-hidden" multiple>
+            <span class="transport__bike-icon"></span>
+          </li>
+          <li class="transport__item">
+            <input type="checkbox" name="on-foot" class="transport__on-foot visually-hidden" multiple checked>
+            <span class="transport__on-foot"></span>
+          </li>
+        </ul>
+      </h3>
+    </section>
+    <section class="my-plans">
+      <h2 class="my-plans__title">Мои планы:</h2>
+      <ol class="plan-cards">
+        <li class="plan-cards__item">
+          <div class="trip-card">
+            <h3 class="trip-card__title">Франция, Италия</h3>
+            <p class="trip-card__companions-amount">3 попутчика</p>
+            <ul class="dates">
+              <li class="dates__item"><span class="dates__departure-date">26 мар</span></li>
+              <li class="dates__item"><span class="dates__hyphen"> — </span></li>
+              <li class="dates__item"><span class="dates__arrival-date">29 мар</span></li>
+            </ul>
+            <button type="button" class="trip-card__change">Изменить</button>
+          </div>
+        </li>
+        <li class="plan-cards__item">
+          <div class="trip-card">
+            <h3 class="trip-card__title">Таиланд, Индонезия</h3>
+            <p class="trip-card__companions-amount">1 попутчик</p>
+            <ul class="dates">
+              <li class="dates__item"><span class="dates__departure-date">1 июл</span></li>
+              <li class="dates__item"><span class="dates__hyphen"> — </span></li>
+              <li class="dates__item"><span class="dates__arrival-date">15 июл</span></li>
+            </ul>
+            <button type="button" class="trip-card__change">Изменить</button>
+          </div>
+        </li>
+      </ol>
+    </section>
+    <section class="add-plan">
+      <h2 class="add-plan__title">Добавить план:</h2>
+
+    </section>
+  </main>
 </body>
 
 </html>
