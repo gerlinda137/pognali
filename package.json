@@ -1,23 +1,22 @@
 {
-  "name": "sedona-17",
-  "version": "17.0.0",
+  "name": "pognali",
+  "version": "",
   "private": true,
-  "description": "Личный проект «Седона» от HTML Academy",
+  "description": "Личный проект «Погнали» от HTML Academy",
   "devDependencies": {
-    "autoprefixer": "9.5.x",
+    "@htmlacademy/editorconfig-cli": "1.x",
+    "autoprefixer": "^9.7.6",
     "browser-sync": "2.26.x",
     "gulp": "4.0.x",
-    "gulp-less": "4.0.x",
     "gulp-plumber": "1.2.x",
-    "gulp-sourcemaps": "2.6.x",
     "gulp-postcss": "8.0.x",
-    "@htmlacademy/editorconfig-cli": "1.x",
-    "stylelint": "10.1.x",
+    "gulp-sourcemaps": "2.6.x",
+    "stylelint": "^13.3.3",
     "stylelint-config-htmlacademy": "0.1.x"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
+    "stylelint": "stylelint \"source/scss/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp css",
     "start": "gulp start"
@@ -33,12 +32,10 @@
     "source/*.html",
     "source/js/**/*.js",
     "source/img/**/*.svg",
-    "source/less/**/*.less"
+    "source/scss/**/*.scss"
   ],
   "engines": {
     "node": "8.16"
   },
-  "dependencies": {
-    "normalize.less": "^1.0.0"
-  }
+  "dependencies": {}
 }
