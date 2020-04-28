@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Погнали</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="build/css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -72,8 +72,8 @@
       <li class="travel-steps__item">Путешествуйте вместе!</li>
     </ol>
     <section class="about-service">
-      <h2 class="about-service__title extended-nav-title">О сервисе</h2>
-      <p class="about-service__description extended-nav-description">
+      <h2 class="about-service__title global-title">О сервисе</h2>
+      <p class="about-service__description global-paragraph">
         Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и
         черпайте вдохновение в чужих.
       </p>
@@ -82,57 +82,51 @@
       </p>
     </section>
     <section class="destinations">
-      <h2 class="destinations__title extended-nav-title">Направления</h2>
-      <p class="destinations__description extended-nav-description">
+      <h2 class="destinations__title global-title">Направления</h2>
+      <p class="destinations__description global-paragraph">
         Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно
         там заняться.
       </p>
       <ul class="destinations-cards">
         <li class="destinations-cards__card">
-          <div class="country-card">
-            <a href="#" class="country-card__link">
-              <img src="https://via.placeholder.com/270x110" alt="Таиланд" class="country-card__image" width="270"
-                height="110">
-              <div class="country-card__info">
-                <h3 class="country-card__title">Таиланд</h3>
-                <p class="country-card__motto">Джунгли зовут!</p>
-                <span class="country-card__views-number">18321</span>
-              </div>
-            </a>
-          </div>
+          <a href="#" class="country-card">
+            <img src="https://via.placeholder.com/270x110" alt="Таиланд" class="country-card__image" width="270"
+              height="110">
+            <div class="country-card__info">
+              <h3 class="country-card__title">Таиланд</h3>
+              <p class="country-card__motto">Джунгли зовут!</p>
+              <span class="country-card__views-number">18321</span>
+            </div>
+          </a>
         </li>
         <li class="destinations-cards__card">
-          <div class="country-card">
-            <a href="#" class="country-card__link">
-              <img src="https://via.placeholder.com/270x110" alt="Франция" class="country-card__image" width="270"
-                height="110">
-              <div class="country-card__info">
-                <h3 class="country-card__title">Франция</h3>
-                <p class="country-card__motto">Трэ бьен, манифик!</p>
-                <span class="country-card__views-number">12518</span>
-              </div>
-            </a>
-          </div>
+          <a href="#" class="country-card">
+            <img src="https://via.placeholder.com/270x110" alt="Франция" class="country-card__image" width="270"
+              height="110">
+            <div class="country-card__info">
+              <h3 class="country-card__title">Франция</h3>
+              <p class="country-card__motto">Трэ бьен, манифик!</p>
+              <span class="country-card__views-number">12518</span>
+            </div>
+          </a>
         </li>
         <li class="destinations-cards__card">
-          <div class="country-card">
-            <a href="#" class="country-card__link">
-              <img src="https://via.placeholder.com/270x110" alt="Чехия" class="country-card__image" width="270"
-                height="110">
-              <div class="country-card__info">
-                <h3 class="country-card__title">Чехия</h3>
-                <p class="country-card__motto">Закоулки старой Европы</p>
-                <span class="country-card__views-number">5326</span>
-              </div>
-            </a>
-          </div>
+          <a href="#" class="country-card__link">
+            <img src="https://via.placeholder.com/270x110" alt="Чехия" class="country-card__image" width="270"
+              height="110">
+            <div class="country-card__info">
+              <h3 class="country-card__title">Чехия</h3>
+              <p class="country-card__motto">Закоулки старой Европы</p>
+              <span class="country-card__views-number">5326</span>
+            </div>
+          </a>
         </li>
       </ul>
-      <a href="#" class="show-all-button">Показать все</a>
+      <a href="form.html" class="show-all-button">Показать все</a>
     </section>
     <section class="companions">
-      <h2 class="companions__title extended-nav-title">Попутчики</h2>
-      <p class="companions__description extended-nav-description">
+      <h2 class="companions__title global-title">Попутчики</h2>
+      <p class="companions__description global-paragraph">
         Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут
         для хайкинга.
       </p>
@@ -157,24 +151,14 @@
             </ul>
             <h3 class="companion__name">Таня Фирсова</h3>
             <ul class="hashtags">
+              <li class="hashtags__item">#ЗОЖ</li>
               <li class="hashtags__item">
-                <span class="hashtags__text">#ЗОЖ</span>
+                #ПП
               </li>
-              <li class="hashtags__item">
-                <span class="hashtags__text">#ПП</span>
-              </li>
-              <li class="hashtags__item">
-                <span class="hashtags__text">#Фитнес</span>
-              </li>
-              <li class="hashtags__item">
-                <span class="hashtags__text">#пляж</span>
-              </li>
-              <li class="hashtags__item">
-                <span class="hashtags__text">#авокадо</span>
-              </li>
-              <li class="hashtags__item">
-                <span class="hashtags__text">#смузи</span>
-              </li>
+              <li class="hashtags__item">#Фитнес</li>
+              <li class="hashtags__item">#пляж</li>
+              <li class="hashtags__item">#авокадо</li>
+              <li class="hashtags__item">#смузи</li>
             </ul>
             <ul class="transport">
               <li class="transport__item"><img src="https://via.placeholder.com/19x21" alt="самолет" width="19"
@@ -202,21 +186,11 @@
             </ul>
             <h3 class="companion__name">Петя Демин</h3>
             <ul class="hashtags">
-              <li class="hashtags__item">
-                <span class="hashtags__text">#бургер</span>
-              </li>
-              <li class="hashtags__item">
-                <span class="hashtags__text">#бар</span>
-              </li>
-              <li class="hashtags__item">
-                <span class="hashtags__text">#футбол</span>
-              </li>
-              <li class="hashtags__item">
-                <span class="hashtags__text">#концерт</span>
-              </li>
-              <li class="hashtags__item">
-                <span class="hashtags__text">#крафт</span>
-              </li>
+              <li class="hashtags__item">#бургер</li>
+              <li class="hashtags__item">#бар</li>
+              <li class="hashtags__item">#футбол</li>
+              <li class="hashtags__item">#концерт</li>
+              <li class="hashtags__item">#крафт</li>
             </ul>
             <ul class="transport">
               <li class="transport__item"><img src="https://via.placeholder.com/19x21" alt="самолет" width="19"
@@ -231,12 +205,10 @@
           </div>
         </li>
       </ul>
-      <a href="#" class="show-all-button">Показать всех</a>
+      <a href="catalog.html" class="show-all-button">Показать всех</a>
     </section>
     <section class="add-profile">
       <h2 class="add-profile__title">Добавьте свой профиль</h2>
-      <img src="https://via.placeholder.com/99x99" alt="Добавьте профиль" width="99" height="99"
-        class="add-profile__icon">
       <ol class="features-list">
         <li class="features-list__item">
           <p class="features-list__offer">Базовое размещение</p>
@@ -264,7 +236,7 @@
         <input type="email" id="email" name="email" placeholder="E-mail">
         <button class="email-form__button" type="submit">svg</button>
       </form>
-      <p class="contact-us__more-info">
+      <p class="contact-us__content">
         Остались вопросы? Мы с радостью на них ответим!
       </p>
       <ul class="contacts-list">
@@ -289,9 +261,9 @@
   <footer class="page-footer">
     <img class="page-footer__logo" src="https://via.placeholder.com/96x15" alt="Погнали?" width="96" height="15">
     <ul class="social-media">
-      <li><a href="#" class="social-media__button facebook-button" aria-label="facebook"></a></li>
-      <li><a href="#" class="social-media__button vk-button" aria-label="VK"></a></li>
-      <li><a href="#" class="social-media__button instagram-button" aria-label="instagram"></a></li>
+      <li><a href="#" class="social-media__button social-media__button--facebook" aria-label="facebook"></a></li>
+      <li><a href="#" class="social-media__button social-media__button--vk" aria-label="VK"></a></li>
+      <li><a href="#" class="social-media__button social-media__button--instagram" aria-label="instagram"></a></li>
     </ul>
     <div class="developed-by">
       <p class="developed-by__text">Разработано</p>
