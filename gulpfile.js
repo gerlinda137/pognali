@@ -32,6 +32,7 @@ gulp.task("copy", function () {
         "source/fonts/**/*.{woff,woff2}",
         "source/img/**",
         "source/js/**",
+        "source/*.html",
         "source/*.ico"
       ], {
         base: "source"
@@ -54,7 +55,7 @@ gulp.task("server", function () {
     ui: false
   });
 
-  gulp.watch("source/sсss/**/*.{scss,sass}", gulp.series("css"));
+  gulp.watch("source/**", gulp.series("build", "refresh"));
 });
 
 gulp.task("build", gulp.series("clean", "copy", "css"));
