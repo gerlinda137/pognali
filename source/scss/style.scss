@@ -1,6 +1,10 @@
+/*Служебные*/
+@import "includes/variables";
 @import "includes/mixins";
-@import "blocks/page-header";
+@import "includes/fonts";
 
+/*Общие блоки и блоки главной страницы*/
+@import "blocks/page-header";
 
 body {
   margin: 0;
