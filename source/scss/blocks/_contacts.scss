@@ -3,3 +3,21 @@
   list-style: none;
   padding-left: 0;
 }
+
+.contacts__phone {
+  width: 18px;
+  height: 18px;
+
+  .general-svg {
+    fill: $dark-two;
+  }
+}
+
+.contacts__mail {
+  width: 18px;
+  height: 14px;
+
+  .general-svg {
+    fill: $dark-two;
+  }
+}
