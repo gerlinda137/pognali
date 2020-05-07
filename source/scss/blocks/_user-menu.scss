@@ -1,0 +1,21 @@
+.user-menu {
+  display: flex;
+  background-image: url('../img/globe-back-mobile@1x.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.authorization {
+  @include reset-default-button-style;
+  color: $dark-two;
+  font-family: $font;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: center;
+  background-color: $light-gold;
+  width: 189px;
+  height: 40px;
+  border-radius: 20px;
+}

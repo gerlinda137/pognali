@@ -5,6 +5,10 @@
 
 /*Общие блоки и блоки главной страницы*/
 @import "blocks/page-header";
+@import "blocks/mobile-menu";
+@import "blocks/page-main";
+@import "blocks/user-menu";
+@import "blocks/contacts";
 
 body {
   margin: 0;
