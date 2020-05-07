@@ -55,11 +55,7 @@ gulp.task("server", function () {
     ui: false
   });
 
-<<<<<<< HEAD
   gulp.watch("source/**", gulp.series("build", "refresh"));
-=======
-  gulp.watch("source/sсss/**/*.{scss,sass}", gulp.series("css"));
->>>>>>> bdccd70... правки по index.html
 });
 
 gulp.task("build", gulp.series("clean", "copy", "css"));
