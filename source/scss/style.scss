@@ -2,6 +2,8 @@
 @import "includes/variables";
 @import "includes/mixins";
 @import "includes/fonts";
+@import "../../node_modules/normalize.css/normalize.css";
+
 
 /*Общие блоки и блоки главной страницы*/
 @import "blocks/page-header";
@@ -12,9 +14,21 @@
 @import "blocks/expert-review";
 @import "blocks/top-screen-container";
 @import "blocks/expert-review-and-travel-steps__wrapper";
+@import "blocks/travel-steps";
 
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
 body {
   margin: 0;
   font-family: $font;
+
 }
