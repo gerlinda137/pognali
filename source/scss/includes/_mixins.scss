@@ -3,3 +3,8 @@
   background-color: transparent;
   cursor: pointer;
 }
+
+@mixin reset-default-link-style {
+  text-decoration: none;
+
+}

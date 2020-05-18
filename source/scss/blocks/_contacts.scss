@@ -5,19 +5,35 @@
 }
 
 .contacts__phone {
-  width: 18px;
-  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: $mango;
 
   .general-svg {
     fill: $dark-two;
+    width: 18px;
+    height: 18px;
+
+
   }
 }
 
 .contacts__mail {
-  width: 18px;
-  height: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: $mango-two;
 
   .general-svg {
     fill: $dark-two;
+    width: 18px;
+    height: 14px;
   }
 }

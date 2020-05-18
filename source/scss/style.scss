@@ -9,7 +9,10 @@
 @import "blocks/page-main";
 @import "blocks/user-menu";
 @import "blocks/contacts";
+@import "blocks/expert-review";
+
 
 body {
   margin: 0;
+  font-family: $font;
 }

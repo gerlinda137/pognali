@@ -10,8 +10,18 @@
   line-height: 40px;
   text-align: center;
   color: $white;
-  background-color: $header-bg-color;
-  margin-top: 0;
   margin: 0 auto 248px;
+  margin-top: 40px;
   max-width: 250px;
+}
+
+.top-screen-container {
+  display: flex;
+  flex-direction: column;
+  background-image: url('../img/traveller-illustration-mobile@1x.png'), url('../img/globe-back-mobile@1x.jpg');
+  background-position: bottom right 50px, center;
+  height: 427px;
+  background-repeat: no-repeat;
+  background-color: $dark-blue-bg;
+  position: relative;
 }
