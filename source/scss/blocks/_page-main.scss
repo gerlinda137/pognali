@@ -3,7 +3,7 @@
   flex-direction: column;
 }
 
-.page-title {
+.page-main__title {
   font-family: $font;
   font-size: 36px;
   font-weight: bold;
@@ -15,13 +15,4 @@
   max-width: 250px;
 }
 
-.top-screen-container {
-  display: flex;
-  flex-direction: column;
-  background-image: url('../img/traveller-illustration-mobile@1x.png'), url('../img/globe-back-mobile@1x.jpg');
-  background-position: bottom right 50px, center;
-  height: 427px;
-  background-repeat: no-repeat;
-  background-color: $dark-blue-bg;
-  position: relative;
-}
+

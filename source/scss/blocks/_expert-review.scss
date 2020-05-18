@@ -1,9 +1,10 @@
 .expert-review {
   display: flex;
   flex-direction: column;
-  padding-top: 50px;
-  background-color: $dark-blue-bg;
+  padding-top: 46px;
   color: $white;
+  width: 159px;
+  margin-left: 50px;
 }
 
 .expert-review__quote {
@@ -17,4 +18,5 @@
   line-height: 22px;
   font-weight: 700;
   font-style: normal;
+  margin-top: 18px;
 }
