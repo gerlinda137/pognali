@@ -1,0 +1,37 @@
+.about-service {
+  display: flex;
+  flex-direction: column;
+  background-image: url('../img/about-mobile@1x.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $dark-blue-grey;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.about-service__container {
+  margin-top: 9px;
+  margin-left: 50px;
+  margin-bottom: 64px;
+
+
+}
+
+.about-service__title {
+  margin-bottom: 20px;
+}
+
+.about-service__description {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 209px;
+  color: $white;
+
+  margin-top: 0;
+  margin-bottom: 19px;
+
+  &--bold {
+    font-weight: bold;
+    line-height: 22px;
+  }
+}

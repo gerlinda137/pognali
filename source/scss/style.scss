@@ -2,6 +2,7 @@
 @import "includes/variables";
 @import "includes/mixins";
 @import "includes/fonts";
+@import "includes/globals";
 @import "../../node_modules/normalize.css/normalize.css";
 
 
@@ -15,6 +16,7 @@
 @import "blocks/top-screen-container";
 @import "blocks/expert-review-and-travel-steps__wrapper";
 @import "blocks/travel-steps";
+@import "blocks/about-service";
 
 
 html {
