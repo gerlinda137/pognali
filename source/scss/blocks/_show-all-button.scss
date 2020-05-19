@@ -1,5 +1,6 @@
 .show-all-button {
   display: flex;
+  position: relative;
   color: $dark-slate-blue;
   font-family: $font;
   font-size: 18px;
@@ -12,4 +13,14 @@
   padding-left: 23px;
   width: 100%;
   border-radius: 10px;
+
+  &::after {
+    content: '';
+    background-image: url('../../img/triangle-arrow-right.svg');
+    width: 10px;
+    height: 14px;
+    position: absolute;
+    right: 23px;
+    top: 24px;
+  }
 }
