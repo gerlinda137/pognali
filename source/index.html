@@ -122,16 +122,14 @@
           <li class="destinations-cards__card">
             <a href="#" class="country-card">
               <img src="img/thailand-mobile@1x.jpg" alt="Таиланд" class="country-card__image" width="270" height="110">
-              <span class="country-card__flag">
-                <svg viewBox="0 0 71 48" width="71" height="48" xmlns="http://www.w3.org/2000/svg">
-                  <g fill="none">
-                    <rect fill="#ED5565" x=".25" y=".07" width="70" height="47" rx="6.36" />
-                    <path fill="#FFF" d="M.25 9.57h70v28h-70z" />
-                    <path fill="#4758A9" d="M.25 13.57h70v20h-70z" />
-                  </g>
-                </svg>
-
-              </span>
+              <svg class="country-card__flag-svg" viewbox="0 0 71 48" width="71" height="48"
+                xmlns="http://www.w3.org/2000/svg">
+                <g fill="none">
+                  <rect fill="#ED5565" x=".25" y=".07" width="70" height="47" rx="6.36" />
+                  <path fill="#FFF" d="M.25 9.57h70v28h-70z" />
+                  <path fill="#4758A9" d="M.25 13.57h70v20h-70z" />
+                </g>
+              </svg>
               <div class="country-card__info">
                 <div class="country-card__info-container">
                   <h3 class="country-card__title">Таиланд</h3>
@@ -144,6 +142,16 @@
           <li class="destinations-cards__card">
             <a href="#" class="country-card">
               <img src="img/france-mobile@1x.jpg" alt="Франция" class="country-card__image" width="270" height="110">
+              <svg class="country-card__flag-svg" viewbox="0 0 71 48" width="71" height="48"
+                xmlns="http://www.w3.org/2000/svg">
+                <g fill="none">
+                  <path d="M6.51.11A6.36 6.36 0 00.15 6.47v34.27a6.36 6.36 0 006.36 6.36h17V.1l-17 .01z"
+                    fill="#4758A9" />
+                  <path d="M23.49.11v47h23.35v-47H23.49z" fill="#FFF" />
+                  <path d="M63.78.11H46.83v47h16.95a6.36 6.36 0 006.36-6.36V6.48A6.36 6.36 0 0063.78.11z"
+                    fill="#ED5565" />
+                </g>
+              </svg>
               <div class="country-card__info">
                 <div class="country-card__info-container">
                   <h3 class="country-card__title">Франция</h3>
@@ -156,6 +164,16 @@
           <li class="destinations-cards__card">
             <a href="#" class="country-card">
               <img src="img/czech-mobile@1x.jpg" alt="Чехия" class="country-card__image" width="270" height="110">
+              <svg class="country-card__flag-svg" viewbox="0 0 71 48" width="71" height="48"
+                xmlns="http://www.w3.org/2000/svg">
+                <g fill="none">
+                  <path d="M63.92.55H6.65A6.36 6.36 0 00.29 6.91v17.64h70V6.91A6.36 6.36 0 0063.92.55z" fill="#FFF" />
+                  <path d="M.28 41.18a6.36 6.36 0 006.36 6.36h57.28a6.36 6.36 0 006.36-6.36V24.55h-70v16.63z"
+                    fill="#ED5565" />
+                  <path d="M2.19 2.38a6.34 6.34 0 00-1.9 4.54v34.27a6.34 6.34 0 001.95 4.57l23.05-21.21L2.19 2.38z"
+                    fill="#4758A9" />
+                </g>
+              </svg>
               <div class="country-card__info">
                 <div class="country-card__info-container">
                   <h3 class="country-card__title">Чехия</h3>
@@ -166,7 +184,9 @@
             </a>
           </li>
         </ul>
-        <a href="form.html" class="show-all-button">Показать все</a>
+        <div class="show-all-button__wrapper">
+          <a href="form.html" class="show-all-button">Показать все</a>
+        </div>
       </div>
 
     </section>

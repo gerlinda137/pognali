@@ -1,0 +1,15 @@
+.show-all-button {
+  display: flex;
+  color: $dark-slate-blue;
+  font-family: $font;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+
+  background-color: $light-gold;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  padding-left: 23px;
+  width: 100%;
+  border-radius: 10px;
+}
