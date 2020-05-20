@@ -1,16 +1,32 @@
 .destinations-cards {
   display: flex;
   flex-direction: column;
+  position: relative;
 
   list-style: none;
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 16px;
+
+  &:last-child::after {
+    content: '';
+    // background: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    background-color: red;
+    position: absolute;
+    top: auto;
+    left: auto;
+    height: 91px;
+    width: 270px;
+    z-index: 4;
+  }
+
 }
 
 .destinations-cards__card {
+  position: relative;
   display: flex;
   margin-bottom: 11px;
+
 }
 
 .country-card {
