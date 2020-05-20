@@ -1,0 +1,29 @@
+.companions {
+  display: flex;
+  flex-direction: column;
+  background-color: $dark-blue-grey;
+  margin-top: -10px;
+}
+
+.companions__container-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  margin-top: 90px;
+}
+
+.companions__title {}
+
+.companions__description {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 215px;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 21px;
+}
+
+.companions__description--bold {
+  font-weight: bold;
+  line-height: 22px;
+}
