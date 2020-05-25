@@ -1,0 +1,36 @@
+.email-form {
+  display: flex;
+  margin-bottom: 27px;
+}
+
+.email-form__input {
+  display: flex;
+  width: 100%;
+  background-color: $white;
+  padding-top: 24px;
+  padding-bottom: 23px;
+  border: none;
+  border-radius: 10px;
+  position: relative;
+
+  &::placeholder {
+    color: $greyish-brown-30;
+    font: $font;
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+
+.email-form__button {
+  @include reset-default-button-style;
+  position: absolute;
+  background-color: $light-gold;
+  padding: 24px 23px 21px 27px;
+  border-radius: 10px;
+  right: 24px;
+}
+
+.email-form__button-svg {
+  width: 10px;
+  height: 14px;
+}

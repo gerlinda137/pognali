@@ -57,6 +57,12 @@
   margin-bottom: 5px;
   border-top: 1px solid $darker-grey;
   padding-top: 14px;
+
+  font: $font;
+  color: $greyish-brown;
+  font-weight: light;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .features-list__offer {

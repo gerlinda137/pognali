@@ -1,0 +1,64 @@
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  background-color: $dark-blue-grey;
+  position: relative;
+
+  &::after {
+    content: '';
+    width: 100%;
+    padding-bottom: 30px;
+    position: absolute;
+    bottom: -30px;
+    background-color: #192144;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    z-index: 5;
+  }
+}
+
+.contact-us__container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 98px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.contact-us__title {
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.contact-us__content {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  color: $white;
+  text-align: center;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  max-width: 212px;
+}
+
+.contact-us__link {
+  display: flex;
+  color: $light-gold;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.contact-us__more-questions {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  color: $white;
+  text-align: center;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  max-width: 212px;
+}
