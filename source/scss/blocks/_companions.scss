@@ -3,17 +3,27 @@
   flex-direction: column;
   background-color: $dark-blue-grey;
   background-image: url('../../img/smolov-back-desktop@1x.png'), url('../../img/rogovaya-back-mobile@1x.png');
-  background-position: 152px 80px, -9px 352px;
+  background-position: 152px 70px, -9px 342px;
   background-repeat: no-repeat;
-  margin-top: -10px;
+  position: relative;
 
+  &::after {
+    content: '';
+    width: 100%;
+    padding-bottom: 30px;
+    position: absolute;
+    bottom: -30px;
+    background-color: $dark-blue-grey;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
 }
 
 .companions__container-info {
   display: flex;
   flex-direction: column;
   margin-left: 50px;
-  margin-top: 110px;
+  margin-top: 100px;
   margin-bottom: 37px;
 }
 
