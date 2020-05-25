@@ -1,0 +1,19 @@
+.developed-by {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.developed-by__link {
+  display: flex;
+  text-decoration: none;
+
+}
+
+.developed-by__text {
+  color: $greyish-brown;
+  font-size: 16px;
+  line-height: 22px;
+}

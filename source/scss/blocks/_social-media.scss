@@ -1,0 +1,34 @@
+.social-media {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  max-width: 135px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.social-media__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: $light-gold;
+
+
+  &--facebook svg {
+    width: 11px;
+    height: 21px;
+  }
+
+  &--vk svg {
+    width: 23px;
+    height: 12px;
+  }
+
+  &--instagram svg {
+    width: 18px;
+    height: 18px;
+  }
+}

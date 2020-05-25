@@ -1,0 +1,21 @@
+.page-footer {
+  display: flex;
+
+}
+
+.page-footer__container {
+  display: flex;
+  flex-direction: column;
+  background-color: $white;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 30px;
+  margin-top: -248px;
+  width: 100%;
+}
+
+.page-footer__logo {
+  margin: 0 auto;
+  margin-top: 38px;
+
+  margin-bottom: 39px;
+}
