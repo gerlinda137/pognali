@@ -8,18 +8,6 @@
   margin-top: 0;
   margin-bottom: 16px;
 
-  &:last-child::after {
-    content: '';
-    // background: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
-    background-color: red;
-    position: absolute;
-    top: auto;
-    left: auto;
-    height: 91px;
-    width: 270px;
-    z-index: 4;
-  }
-
 }
 
 .destinations-cards__card {
@@ -27,6 +15,16 @@
   display: flex;
   margin-bottom: 11px;
 
+  &:last-child::after {
+    content: '';
+    background-color: transparent;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    position: absolute;
+    top: 100px;
+    height: 91px;
+    width: 270px;
+    z-index: 4;
+  }
 }
 
 .country-card {

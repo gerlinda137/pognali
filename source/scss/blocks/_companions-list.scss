@@ -1,0 +1,19 @@
+.companions-list {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+.companions-list__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.companions-list__card {
+  margin-bottom: 10px;
+}

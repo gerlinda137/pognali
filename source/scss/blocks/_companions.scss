@@ -6,16 +6,21 @@
   background-position: 152px 80px, -9px 352px;
   background-repeat: no-repeat;
   margin-top: -10px;
+
 }
 
 .companions__container-info {
   display: flex;
   flex-direction: column;
   margin-left: 50px;
-  margin-top: 90px;
+  margin-top: 110px;
+  margin-bottom: 37px;
 }
 
-.companions__title {}
+.companions__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
 
 .companions__description {
   display: flex;

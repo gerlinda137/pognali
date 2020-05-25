@@ -1,0 +1,62 @@
+.level-icon {
+  position: absolute;
+  width: 114px;
+  height: 114px;
+  top: -10px;
+  left: -10px;
+}
+
+.level-icon__svg {
+  width: 114px;
+  height: 114px;
+}
+
+
+.level-icon__svg-progress {
+  fill: none;
+  stroke-width: 3px;
+  stroke: $mango;
+  stroke-linecap: round;
+  stroke-dashoffset: 10;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+
+  &--99 {
+    stroke-dasharray: 190;
+  }
+
+  &--80 {
+    stroke-dasharray: 165;
+  }
+}
+
+.level-icon__svg-bg {
+  fill: black;
+  opacity: 0.6;
+}
+
+.level-icon__number {
+  padding-top: 2px;
+  color: $white;
+  position: absolute;
+  top: 11px;
+  width: 25px;
+  left: 44px;
+  top: 11px;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 700;
+  line-height: 24px;
+  border-bottom: 1px solid;
+}
+
+.level-icon__text {
+  font-size: 14px;
+  margin-top: 4px;
+  width: 100%;
+  color: #ffffff;
+  position: absolute;
+  top: 60px;
+  line-height: 14px;
+  text-align: center;
+}

@@ -1,0 +1,21 @@
+.flags {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: -11px;
+  margin-bottom: 4px;
+
+  list-style: none;
+  padding-left: 0;
+
+
+}
+
+.flags__item {
+  margin-right: 19px;
+
+  &:last-child {
+    margin-right: 0;
+
+  }
+}
