@@ -20,34 +20,67 @@
             d="M1.5 3h22c.8 0 1.5-.7 1.5-1.5S24.3 0 23.5 0h-22C.7 0 0 .7 0 1.5S.7 3 1.5 3zm22 5h-22C.7 8 0 8.7 0 9.5S.7 11 1.5 11h22c.8 0 1.5-.7 1.5-1.5S24.3 8 23.5 8z" />
         </svg></button>
     </div>
-    <div class="mobile-menu">
+    <div class="mobile-menu mobile-menu--hidden">
+      <div class="mobile-menu__container">
+        <a class="mobile-menu__logo-link">
+          <img src="img/logo-mobile-blue@1x.png" alt="Погнали" class="mobile-menu__logo-img" width="100" height="19">
+        </a>
+        <button class="mobile-menu__close-button" type="button"><svg class="mobile-menu__close-button-svg"
+            xmlns="http://www.w3.org/2000/svg" viewbox="0 0 18 18">
+            <path
+              d="M10.3 9l7.4-7.4c.4-.4.4-.9 0-1.3s-.9-.4-1.3 0L9 7.7 1.6.3C1.2-.1.7-.1.3.3s-.4.9 0 1.3L7.7 9 .3 16.4c-.4.4-.4.9 0 1.3s.9.4 1.3 0L9 10.3l7.4 7.4c.4.4.9.4 1.3 0s.4-.9 0-1.3L10.3 9z"
+              fill="#606161" /></svg>
+        </button>
+      </div>
+
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__list-item">
-            <a>О сервисе</a>
+            <a class="main-nav__list-link">О сервисе</a>
           </li>
           <li class="main-nav__list-item">
-            <a href="form.html">Направления</a>
+            <a class="main-nav__list-link" href="form.html">Направления</a>
           </li>
           <li class="main-nav__list-item">
-            <a href="catalog.html">Попутчики</a>
+            <a class="main-nav__list-link" href="catalog.html">Попутчики</a>
           </li>
         </ul>
       </nav>
-      <button class="authorization-button authorization-button--dropdown-authorization"
-        type="button">Авторизация</button>
-      <ul class="dropdown-contacts">
-        <li class="dropdown-contacts__item">
-          <a class="dropdown-contacts__phone" href="tel:88005558628">8 800 555-86-28</a>
+      <button class="authorization authorization--dropdown-authorization" type="button">Авторизация</button>
+      <ul class="contacts-list contacts-list--mobile-menu">
+        <li class="contacts-list__item">
+          <a class="contacts-list__phone" href="tel:88005558628">8 800 555-86-28</a>
         </li>
-        <li class="dropdown-contacts__item">
-          <a class="dropdown-contacts__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        <li class=" contacts-list__item">
+          <a class="contacts-list__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </li>
       </ul>
       <ul class="social-media social-media--dropdown-menu">
-        <li><a class="social-media__button social-media__button--facebook" aria-label="facebook"></a></li>
-        <li><a class="social-media__button social-media__button--vk" aria-label="VK"></a></li>
-        <li><a class="social-media__button social-media__button--instagram" aria-label="instagram"></a></li>
+        <li><a class="social-media__button social-media__button--facebook" aria-label="facebook"><svg
+              class="social-media__svg" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 11 21">
+              <path
+                d="M7.8 21H2.2v-9.8H0V6.4h2.1c-.1-2.2.3-3.8 1.3-4.9C4.2.6 5.5.1 7.1 0H11v4.7H7.9c-.1.2-.2.8-.2 1.7H11v4.8H7.8V21zm-4.4-1.1h3.1v-9.8h3.2V7.5H6.5v-.6c0-1.5 0-2.9.8-3.4l.2-.1h2.3V1.1H7.1c-1.2.1-2.2.5-2.8 1.2-.8.9-1.1 2.5-.9 4.6l.1.6H1.2v2.6h2.2v9.8z" />
+            </svg></a></li>
+        <li><a class="social-media__button social-media__button--vk" aria-label="VK"><svg class="social-media__svg"
+              xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 15.8">
+              <path
+                d="M23.9 15.8c-.4 0-1.2-.1-2.1-.6-.6-.4-1.2-1-1.8-1.5-.4-.4-1.2-1.2-1.4-1.2-.3.1-.5.9-.5 1.6 0 .1 0 .8-.5 1.2-.4.4-1.1.5-1.2.5h-1.9c-1 0-4.4-.2-7.4-3C3.4 9.4.3 3 .1 2.7 0 2.2-.1 1.5.3 1.1.7.7 1.4.6 1.7.6h4.2c.1 0 .6.1 1 .3.4.2.6.7.6.7S8.1 3 9 4.3c1.3 2 1.9 2.5 2.1 2.6.2-.4.3-1.7.2-2.9 0-.5-.1-1.1-.3-1.3-.1-.1-.4-.3-.8-.3l-.7-.6c-.1-.7.6-1.2 1.1-1.4.7-.3 1.8-.4 3.1-.4h.7c1.2 0 1.6.1 2.1.2 1.7.4 1.6 1.7 1.6 3.3v2.1c0 .4 0 1 .1 1.3.2-.1.9-.7 2.1-2.5.8-1.2 1.4-2.5 1.5-2.8.2-.4.6-.9 1.6-.9h4.7c1 0 1.6.3 1.8.9.3.6.2 1.7-2.4 4.6-.4.4-.7.8-1 1.1-.6.7-1.2 1.4-1.2 1.6.1.1.7.6 1.3 1.1 1.5 1.2 2.5 2.3 3 3.1.5.8.4 1.3.3 1.7-.4.9-1.6 1-1.9 1h-4.1zm-5.3-4.9c.9 0 1.7.8 2.5 1.6.5.5 1 1 1.5 1.3.7.4 1.3.4 1.4.4h3.9c.2 0 .4-.1.5-.1 0 0 0-.1-.1-.2-.4-.7-1.4-1.7-2.7-2.7-1.2-1-1.8-1.5-1.9-2.2-.1-.8.5-1.4 1.6-2.7.3-.3.6-.7 1-1.1 1.6-1.8 2-2.6 2.1-3h-5.3c-.2.4-.8 1.8-1.6 3-1.9 2.8-2.8 3.2-3.4 3.2-.2 0-.4 0-.6-.1-1-.6-1-1.8-.9-2.8V3.4c.1-1.7 0-1.7-.4-1.8-.4-.1-.7-.1-1.9-.2h-.7c-.6 0-1.3 0-1.9.1l.3.3c.6.7.6 2 .6 2.2.1 1.6.1 3.8-1 4.3-.2.1-.4.1-.6.1-.9 0-1.9-.9-3.4-3.3-.8-1.2-1.5-2.7-1.5-2.8L6 2.2c-.1 0-.2-.1-.3-.1H1.6c.6 1.2 3.4 6.6 6.5 9.5 2.7 2.5 5.8 2.6 6.4 2.6h1.9s.2-.1.3-.1V14c0-.3 0-2.6 1.6-3 .1-.1.2-.1.3-.1z" />
+            </svg></a></li>
+        <li><a class="social-media__button social-media__button--instagram" aria-label="instagram"><svg
+              class="social-media__svg" version="1.1" id="Layer_5" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
+              viewbox="0 0 23 23" xml:space="preserve">
+              <style>
+                .st0 {
+                  fill: #231f20
+                }
+
+              </style>
+              <path class="st0"
+                d="M17 1.5c2.5 0 4.5 2 4.5 4.5v11c0 2.5-2 4.5-4.5 4.5H6c-2.5 0-4.5-2-4.5-4.5V6c0-2.5 2-4.5 4.5-4.5h11M17 0H6C2.7 0 0 2.7 0 6v11c0 3.3 2.7 6 6 6h11c3.3 0 6-2.7 6-6V6c0-3.3-2.7-6-6-6z" />
+              <path class="st0"
+                d="M11.5 7.1c2.4 0 4.4 2 4.4 4.4 0 2.4-2 4.4-4.4 4.4-2.4 0-4.4-2-4.4-4.4 0-2.4 2-4.4 4.4-4.4m0-1.5c-3.3 0-5.9 2.7-5.9 5.9s2.7 5.9 5.9 5.9 5.9-2.7 5.9-5.9-2.6-5.9-5.9-5.9z" />
+              <circle class="st0" cx="17.6" cy="5.4" r="1.3" />
+            </svg></a></li>
       </ul>
     </div>
   </header>
@@ -225,7 +258,9 @@
                     <img class="flags__image" src="img/flag-seychelles.svg" alt="Сейшелы" width="35" height="24">
                   </li>
                 </ul>
-                <h3 class="companion__name companion__name--offline">Таня Фирсова</h3>
+                <h3 class="companion__name companion__name--offline"><span
+                    class="companion__name-container companion__name-container--offline">Таня
+                    Фирсова</span></h3>
                 <ul class="hashtags">
                   <li class="hashtags__item">#ЗОЖ</li>
                   <li class="hashtags__item">
@@ -288,7 +323,9 @@
                     <img class="flags__image" src="img/flag-czech.svg" alt="Чехия" width="35" height="24">
                   </li>
                 </ul>
-                <h3 class="companion__name companion__name--online">Петя Демин</h3>
+                <h3 class="companion__name companion__name--online"><span
+                    class="companion__name-container companion__name-container--online">Петя
+                    Демин</span></h3>
                 <ul class="hashtags">
                   <li class="hashtags__item">#бургер</li>
                   <li class="hashtags__item">#бар</li>
@@ -362,7 +399,7 @@
       <div class="contact-us__container">
         <h2 class="contact-us__title global-title">Заинтересовались?</h2>
         <p class="contact-us__content">
-          Зарегистрируйтесь, <br> это быстро и бесплатно! <br> Уже зарегистрированы? Тогда <br> скорее
+          Зарегистрируйтесь, <br> это быстро и бесплатно! <br> Уже зарегистрированы? Тогда скорее
           <a href="#" class="contact-us__link">авторизуйтесь</a>.
         </p>
         <form class="email-form">
@@ -376,7 +413,7 @@
         <p class="contact-us__more-questions">
           Остались вопросы? <br> Мы с радостью на них ответим!
         </p>
-        <ul class="contacts-list">
+        <ul class="contacts-list ">
           <li class="contacts-list__item">
             <a class="contacts-list__phone" href="tel:88005558628">8 800 555-86-28</a>
           </li>
@@ -412,7 +449,7 @@
                 d="M23.9 15.8c-.4 0-1.2-.1-2.1-.6-.6-.4-1.2-1-1.8-1.5-.4-.4-1.2-1.2-1.4-1.2-.3.1-.5.9-.5 1.6 0 .1 0 .8-.5 1.2-.4.4-1.1.5-1.2.5h-1.9c-1 0-4.4-.2-7.4-3C3.4 9.4.3 3 .1 2.7 0 2.2-.1 1.5.3 1.1.7.7 1.4.6 1.7.6h4.2c.1 0 .6.1 1 .3.4.2.6.7.6.7S8.1 3 9 4.3c1.3 2 1.9 2.5 2.1 2.6.2-.4.3-1.7.2-2.9 0-.5-.1-1.1-.3-1.3-.1-.1-.4-.3-.8-.3l-.7-.6c-.1-.7.6-1.2 1.1-1.4.7-.3 1.8-.4 3.1-.4h.7c1.2 0 1.6.1 2.1.2 1.7.4 1.6 1.7 1.6 3.3v2.1c0 .4 0 1 .1 1.3.2-.1.9-.7 2.1-2.5.8-1.2 1.4-2.5 1.5-2.8.2-.4.6-.9 1.6-.9h4.7c1 0 1.6.3 1.8.9.3.6.2 1.7-2.4 4.6-.4.4-.7.8-1 1.1-.6.7-1.2 1.4-1.2 1.6.1.1.7.6 1.3 1.1 1.5 1.2 2.5 2.3 3 3.1.5.8.4 1.3.3 1.7-.4.9-1.6 1-1.9 1h-4.1zm-5.3-4.9c.9 0 1.7.8 2.5 1.6.5.5 1 1 1.5 1.3.7.4 1.3.4 1.4.4h3.9c.2 0 .4-.1.5-.1 0 0 0-.1-.1-.2-.4-.7-1.4-1.7-2.7-2.7-1.2-1-1.8-1.5-1.9-2.2-.1-.8.5-1.4 1.6-2.7.3-.3.6-.7 1-1.1 1.6-1.8 2-2.6 2.1-3h-5.3c-.2.4-.8 1.8-1.6 3-1.9 2.8-2.8 3.2-3.4 3.2-.2 0-.4 0-.6-.1-1-.6-1-1.8-.9-2.8V3.4c.1-1.7 0-1.7-.4-1.8-.4-.1-.7-.1-1.9-.2h-.7c-.6 0-1.3 0-1.9.1l.3.3c.6.7.6 2 .6 2.2.1 1.6.1 3.8-1 4.3-.2.1-.4.1-.6.1-.9 0-1.9-.9-3.4-3.3-.8-1.2-1.5-2.7-1.5-2.8L6 2.2c-.1 0-.2-.1-.3-.1H1.6c.6 1.2 3.4 6.6 6.5 9.5 2.7 2.5 5.8 2.6 6.4 2.6h1.9s.2-.1.3-.1V14c0-.3 0-2.6 1.6-3 .1-.1.2-.1.3-.1z" />
             </svg></a></li>
         <li><a href="#" class="social-media__button social-media__button--instagram" aria-label="instagram"><svg
-              class="social-media__svg" version="1.1" id="Layer_5" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
+              class="social-media__svg" version="1.1" id="Layer_7" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
               viewbox="0 0 23 23" xml:space="preserve">
               <style>
                 .st0 {

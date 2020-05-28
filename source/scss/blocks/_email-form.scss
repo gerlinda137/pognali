@@ -15,9 +15,12 @@
 
   &::placeholder {
     color: $greyish-brown-30;
-    font: $font;
+    font-family: $font;
     font-size: 18px;
     font-weight: bold;
+    padding-left: 24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 }
 

@@ -1,0 +1,26 @@
+.authorization {
+  @include reset-default-button-style;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 40px 7px 36px;
+  border-radius: 20px;
+  background-color: $light-gold;
+
+  color: $dark-two;
+  font-family: $font;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: center;
+
+  &--dropdown-authorization {
+    margin: 0 auto;
+    padding: 10px 81px 10px 77px;
+    margin-bottom: 62px;
+    border-radius: 30px;
+
+  }
+}

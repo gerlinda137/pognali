@@ -9,7 +9,7 @@
     width: 100%;
     padding-bottom: 30px;
     position: absolute;
-    bottom: -30px;
+    bottom: -28px;
     background-color: #edeff6;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
@@ -28,6 +28,7 @@
 .add-profile__title-container {
   display: flex;
   align-items: center;
+  margin-bottom: 16px;
 }
 
 .add-profile__title {

@@ -5,23 +5,3 @@
   margin-top: -16px;
 
 }
-
-.authorization {
-  @include reset-default-button-style;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 40px;
-  width: 189px;
-  border-radius: 20px;
-  background-color: $light-gold;
-
-  color: $dark-two;
-  font-family: $font;
-  text-transform: uppercase;
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 30px;
-  text-align: center;
-}

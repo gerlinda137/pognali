@@ -5,6 +5,15 @@
   padding-left: 0;
   margin: 0;
   margin-left: 60px;
+
+  &--mobile-menu {
+    margin-bottom: 30px;
+
+    .contacts-list__item a {
+      color: $dark-blue-grey;
+    }
+  }
+
 }
 
 .contacts-list__item {

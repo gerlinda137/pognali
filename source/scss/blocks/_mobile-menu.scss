@@ -1,3 +1,36 @@
 .mobile-menu {
-  display: none;
+  display: block;
+  background-color: $white;
+  padding-left: 25px;
+  padding-right: 25px;
+  position: fixed;
+  z-index: 10;
+
+
+  &--hidden {
+    display: none;
+  }
+}
+
+
+.mobile-menu__container {
+  display: flex;
+  margin-top: 27px;
+  margin-bottom: 62px;
+  justify-content: space-between;
+}
+
+.mobile-menu__close-button {
+  @include reset-default-button-style;
+
+
+}
+
+.mobile-menu__close-button-svg {
+  width: 19px;
+  height: 19px;
+}
+
+.mobile-menu__close-button-svg path {
+  fill: $pinkish-grey;
 }
