@@ -5,7 +5,7 @@
   position: relative;
 
   &::after {
-    content: '';
+    content: "";
     width: 100%;
     padding-bottom: 30px;
     position: absolute;
@@ -13,7 +13,6 @@
     background-color: #192144;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
-
   }
 }
 

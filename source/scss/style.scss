@@ -45,7 +45,10 @@
 /*Блоки form.html*/
 @import "blocks/form-main";
 @import "blocks/user-profile";
-
+@import "blocks/my-plans";
+@import "blocks/plan-cards";
+@import "blocks/trip-card";
+@import "blocks/dates";
 
 
 html {
@@ -61,5 +64,4 @@ html {
 body {
   margin: 0;
   font-family: $font;
-
 }

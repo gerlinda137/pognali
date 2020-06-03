@@ -1,0 +1,19 @@
+.my-plans {
+  background-color: $pale-grey-two;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  margin-top: -30px;
+}
+
+.my-pans__container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.my-plans__title {
+  margin-top: 23px;
+  margin-bottom: 29px;
+  color: $dark-slate-blue;
+}

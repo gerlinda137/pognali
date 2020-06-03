@@ -1,0 +1,20 @@
+.dates {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+
+  span {
+    font-family: $font;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 1.4px;
+    color: $dark-slate-blue;
+    text-transform: uppercase;
+  }
+}
+
+.dates__item {
+  margin-right: 6px;
+}

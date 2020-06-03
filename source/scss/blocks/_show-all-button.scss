@@ -15,8 +15,8 @@
   border-radius: 10px;
 
   &::after {
-    content: '';
-    background-image: url('../../img/triangle-arrow-right.svg');
+    content: "";
+    background-image: url(../../img/triangle-arrow-right.svg);
     width: 10px;
     height: 14px;
     position: absolute;

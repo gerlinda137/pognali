@@ -11,7 +11,7 @@
   position: relative;
 
   &::after {
-    content: '';
+    content: "";
     width: 100%;
     padding-bottom: 30px;
     position: absolute;
@@ -37,7 +37,7 @@
 
 
   &::before {
-    content: '';
+    content: "";
     background-image: url(../../img/contacts-location.svg);
     background-size: 14px 22px;
     background-position: center;
@@ -69,7 +69,7 @@
   margin-bottom: 5px;
 
   &::after {
-    content: '';
+    content: "";
     background-image: url(../../img/triangle-arrow-right.svg);
     width: 10px;
     height: 14px;

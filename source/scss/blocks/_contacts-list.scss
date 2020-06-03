@@ -13,7 +13,6 @@
       color: $dark-blue-grey;
     }
   }
-
 }
 
 .contacts-list__item {
@@ -25,7 +24,6 @@
   &:last-child {
     margin-bottom: 11px;
   }
-
 }
 
 .contacts-list__item a {
@@ -40,7 +38,7 @@
 .contacts-list__phone {
 
   &::before {
-    content: '';
+    content: "";
     background-image: url(../../img/contacts-phone.svg);
     background-size: 18px 18px;
     background-repeat: no-repeat;
@@ -52,18 +50,15 @@
     background-position: center;
     left: -60px;
     top: -11px;
-
   }
-
 }
 
 .contacts-list__mail {
   text-transform: uppercase;
-  ;
 
   &::before {
-    content: '';
-    background-image: url(../../img/contacts-mail.svg);
+    content: "";
+    background-image: url("../../img/contacts-mail.svg");
     background-size: 18px 18px;
     background-repeat: no-repeat;
     background-color: $dark-blue-grey-two;
@@ -74,6 +69,5 @@
     background-position: center;
     left: -60px;
     top: -11px;
-
   }
 }

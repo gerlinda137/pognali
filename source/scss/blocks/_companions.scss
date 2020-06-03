@@ -2,13 +2,13 @@
   display: flex;
   flex-direction: column;
   background-color: $dark-blue-grey;
-  background-image: url('../../img/smolov-back-desktop@1x.png'), url('../../img/rogovaya-back-mobile@1x.png');
+  background-image: url(../../img/smolov-back-desktop@1x.png), url(../../img/rogovaya-back-mobile@1x.png);
   background-position: 152px 70px, -9px 342px;
   background-repeat: no-repeat;
   position: relative;
 
   &::after {
-    content: '';
+    content: "";
     width: 100%;
     padding-bottom: 30px;
     position: absolute;
