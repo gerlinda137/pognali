@@ -11,6 +11,11 @@
   margin-left: 25px;
   margin-right: 20px;
   justify-content: space-between;
+
+  &--not-main {
+    margin-top: 19px;
+    margin-bottom: 47px;
+  }
 }
 
 .open-nav-button {

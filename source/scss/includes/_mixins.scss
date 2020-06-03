@@ -4,7 +4,21 @@
   cursor: pointer;
 }
 
-@mixin reset-default-link-style {
-  text-decoration: none;
+@mixin user-profile-subtitle {
+  font-size: 16px;
+  font-weight: bold;
+  color: $dark-slate-blue;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+  background-color: $pale-grey;
+  position: absolute;
+  top: -11px;
 
+}
+
+@mixin user-profile-wrapper {
+  border: solid 1px $cloudy-blue;
+  border-radius: 10px;
+  position: relative;
 }

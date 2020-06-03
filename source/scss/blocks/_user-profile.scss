@@ -1,0 +1,44 @@
+.user-profile {
+  display: flex;
+  flex-direction: column;
+  background-color: $pale-grey;
+  margin-top: -20px;
+}
+
+.user-profile__container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 25px;
+  padding-right: 25px;
+
+}
+
+
+.user-profile__photo-container {
+  display: flex;
+  margin-top: 43px;
+  justify-content: space-between;
+  margin-right: 17px;
+  margin-left: 22px;
+}
+
+.user-profile__image {
+  border-radius: 50%;
+}
+
+.user-profile__change-image {
+  display: flex;
+  width: 100%;
+  background-color: $pale-grey-two;
+  color: $dark-two;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 5px 75px;
+  border-radius: 30px;
+  margin-bottom: 34px;
+}
+
+

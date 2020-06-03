@@ -1,9 +1,37 @@
 .level-icon {
   position: absolute;
-  width: 114px;
-  height: 114px;
+  // width: 114px;
+  // height: 114px;
   top: -10px;
   left: -10px;
+
+  &--form {
+    position: relative;
+
+    .level-icon__number {
+      color: $dark-two;
+      border-bottom: 2px solid $cloudy-blue;
+    }
+
+    .level-icon__text {
+      color: $greyish-brown;
+      font-size: 18px;
+      top: 71px;
+    }
+
+    .level-icon__svg-progress {
+      stroke-width: 1.5px;
+      stroke-dasharray: 145;
+    }
+
+    .level-icon__number {
+      font-size: 38px;
+      left: 31px;
+      top: -4px;
+      padding-bottom: 8px;
+      width: 50px;
+    }
+  }
 }
 
 .level-icon__svg {

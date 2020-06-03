@@ -10,8 +10,43 @@
   margin-bottom: 15px;
   justify-content: center;
 
+  &--user-profile {
+    justify-content: left;
+    width: 211px;
+  }
+
 }
 
 .hashtags__item {
   margin-right: 3px;
+  color: $greyish-brown;
+}
+
+.hashtags__item-link {
+  color: $greyish-brown;
+}
+
+.hashtags__wrapper {
+  @include user-profile-wrapper;
+  padding-top: 20px;
+  padding-bottom: 12px;
+  margin-bottom: 25px;
+
+}
+
+.hashtags__title {
+  @include user-profile-subtitle;
+  width: 70px;
+  left: 99px;
+  // font-size: 16px;
+  // font-weight: bold;
+  // color: $dark-slate-blue;
+  // text-transform: uppercase;
+  // margin: 0;
+  // text-align: center;
+  // background-color: $pale-grey;
+  // position: absolute;
+  // top: -11px;
+  // left: 99px;
+  // width: 70px;
 }
