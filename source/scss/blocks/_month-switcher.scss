@@ -1,0 +1,44 @@
+.month-switcher {
+  display: flex;
+  padding-top: 7px;
+  padding-bottom: 10px;
+  width: 221px;
+  border-top: 1px solid $cloudy-blue;
+  border-bottom: 1px solid $cloudy-blue;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.month-switcher__data {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: $dark-slate-blue;
+}
+
+.month-switcher__button-left {
+  @include reset-default-button-style;
+  display: flex;
+  padding: 0;
+
+  svg {
+    width: 9px;
+    height: 17px;
+  }
+}
+
+.month-switcher__button-right {
+  @include reset-default-button-style;
+  display: flex;
+  padding: 0;
+
+
+  svg {
+    width: 9px;
+    height: 17px;
+  }
+}

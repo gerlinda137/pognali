@@ -1,0 +1,55 @@
+.calender-table {
+  display: table;
+  border-spacing: 0px;
+  border-collapse: collapse;
+  font-family: $font;
+}
+
+.calender-table__days-of-week {
+
+
+  td {
+    font-family: $font;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 8px;
+  }
+
+  &--weekdays {
+    color: $orange-red;
+  }
+}
+
+.calender-table__row {
+  margin: 0;
+}
+
+.calender-table__date {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  border: 1px solid $cloudy-blue;
+  padding-top: 7px;
+  padding-bottom: 5px;
+  color: $greyish-brown;
+
+  &--passed {
+    color: rgba(68, 68, 68, 0.3);
+  }
+
+  &--selected {
+    background-color: $dark-slate-blue;
+    color: $white;
+  }
+
+  &--active {
+    border: solid 2px $orange-red;
+  }
+
+  &--coming {
+    background-color: $pale-grey;
+  }
+}

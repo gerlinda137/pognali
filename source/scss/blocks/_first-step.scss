@@ -1,0 +1,19 @@
+.first-step {
+  display: flex;
+  flex-direction: column;
+  background-color: $white;
+  border-radius: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.first-step__title {
+  color: $dark-slate-blue;
+  line-height: 20px;
+  margin: 0;
+  margin-top: 22px;
+}
+
+.first-step__description {
+  margin-bottom: 18px;
+}

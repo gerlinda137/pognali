@@ -1,0 +1,13 @@
+.next-step {
+  @include reset-default-button-style;
+  font-family: $font;
+  font-size: 17px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $dark-two;
+  background-color: $light-gold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 20px;
+  margin-bottom: 22px;
+}
