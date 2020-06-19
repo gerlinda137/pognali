@@ -324,53 +324,82 @@
               Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.
             </p>
             <div class="select-country">
-              <button class="close-country-button"></button>
-              <p class="select-country__country-name">Босния и Герцеговина</p>
-              <button class="select-country__button"></button>
-              <span class="select-country__flag-container">
-                <img class="select-country__flag-image" src="https://via.placeholder.com/35x24" width="35" height="24"
-                  alt="Флаг страны">
-              </span>
+              <div class="select-country__container">
+                <p class="select-country__country-name">Босния и Герцеговина
+                  <button class="select-country__button"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 17 9">
+                      <path
+                        d="M8.5 7.2L1.3.2C1-.1.5-.1.2.2c-.3.3-.3.8 0 1L8 8.8c.3.3.8.3 1.1 0l7.7-7.5c.1-.2.2-.4.2-.6s-.1-.4-.2-.5c-.3-.3-.8-.3-1.1 0l-7.2 7z" />
+                    </svg></button>
+                </p>
+                <span class="select-country__flag-container">
+                  <img class="select-country__flag-image" src="img/flag-bosnia.svg" width="35" height="24"
+                    alt="Флаг страны">
+                </span>
+                <button class="close-country-button"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 9 9">
+                    <path
+                      d="M5.2 4.5L8.9.8c.1-.2.1-.5 0-.7s-.5-.1-.7 0L4.5 3.8.8.1C.6 0 .3 0 .1.1S0 .6.1.8l3.7 3.7L.1 8.2c-.1.2-.1.5 0 .7.1.1.3.1.4.1s.2 0 .3-.1l3.7-3.7 3.7 3.7c.1.1.2.1.3.1s.2 0 .3-.1c.2-.2.2-.5.1-.7L5.2 4.5z" />
+                  </svg></button>
+              </div>
             </div>
             <div class="select-country">
-              <button class="close-country-button"></button>
-              <p class="select-country__country-name">Чехия</p>
-              <button class="select-country__button"></button>
-              <span class="select-country__flag-container">
-                <img class="select-country__flag-image" src="https://via.placeholder.com/35x24" width="35" height="24"
-                  alt="Флаг страны">
-              </span>
+              <div class="select-country__container">
+                <p class="select-country__country-name">Чехия
+                  <button class="select-country__button"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 17 9">
+                      <path
+                        d="M8.5 7.2L1.3.2C1-.1.5-.1.2.2c-.3.3-.3.8 0 1L8 8.8c.3.3.8.3 1.1 0l7.7-7.5c.1-.2.2-.4.2-.6s-.1-.4-.2-.5c-.3-.3-.8-.3-1.1 0l-7.2 7z" />
+                    </svg></button>
+                </p>
+                <span class="select-country__flag-container">
+                  <img class="select-country__flag-image" src="img/flag-czech.svg" width="35" height="24"
+                    alt="Флаг страны">
+                </span>
+                <button class="close-country-button"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 9 9">
+                    <path
+                      d="M5.2 4.5L8.9.8c.1-.2.1-.5 0-.7s-.5-.1-.7 0L4.5 3.8.8.1C.6 0 .3 0 .1.1S0 .6.1.8l3.7 3.7L.1 8.2c-.1.2-.1.5 0 .7.1.1.3.1.4.1s.2 0 .3-.1l3.7-3.7 3.7 3.7c.1.1.2.1.3.1s.2 0 .3-.1c.2-.2.2-.5.1-.7L5.2 4.5z" />
+                  </svg></button>
+              </div>
             </div>
-            <div class="select-country">
-              <button class="close-country-button"></button>
-              <p class="select-country__country-name">Выберите страну</p>
-              <button class="select-country__button"></button>
-              <div class="alphabet-table">
-                <div class="alphabet-table__item alphabet-table__item--active">а</div>
-                <div class="alphabet-table__item">б</div>
-                <div class="alphabet-table__item">в</div>
-                <div class="alphabet-table__item">г</div>
-                <div class="alphabet-table__item">д</div>
-                <div class="alphabet-table__item">е</div>
-                <div class="alphabet-table__item">з</div>
-                <div class="alphabet-table__item">и</div>
-                <div class="alphabet-table__item">к</div>
-                <div class="alphabet-table__item">л</div>
-                <div class="alphabet-table__item">м</div>
-                <div class="alphabet-table__item">н</div>
-                <div class="alphabet-table__item">о</div>
-                <div class="alphabet-table__item">п</div>
-                <div class="alphabet-table__item">р</div>
-                <div class="alphabet-table__item">с</div>
-                <div class="alphabet-table__item">т</div>
-                <div class="alphabet-table__item">у</div>
-                <div class="alphabet-table__item">ф</div>
-                <div class="alphabet-table__item">х</div>
-                <div class="alphabet-table__item">ч</div>
-                <div class="alphabet-table__item">ш</div>
-                <div class="alphabet-table__item">э</div>
-                <div class="alphabet-table__item">ю</div>
-                <div class="alphabet-table__item">я</div>
+            <div class="select-country select-country--in-selection">
+              <div class="select-country__container">
+                <button class="close-country-button"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 9 9">
+                    <path
+                      d="M5.2 4.5L8.9.8c.1-.2.1-.5 0-.7s-.5-.1-.7 0L4.5 3.8.8.1C.6 0 .3 0 .1.1S0 .6.1.8l3.7 3.7L.1 8.2c-.1.2-.1.5 0 .7.1.1.3.1.4.1s.2 0 .3-.1l3.7-3.7 3.7 3.7c.1.1.2.1.3.1s.2 0 .3-.1c.2-.2.2-.5.1-.7L5.2 4.5z" />
+                  </svg></button>
+                <p class="select-country__country-name">Выберите страну
+                  <button class="select-country__button"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 17 9">
+                      <path
+                        d="M8.5 7.2L1.3.2C1-.1.5-.1.2.2c-.3.3-.3.8 0 1L8 8.8c.3.3.8.3 1.1 0l7.7-7.5c.1-.2.2-.4.2-.6s-.1-.4-.2-.5c-.3-.3-.8-.3-1.1 0l-7.2 7z" />
+                    </svg></button>
+                </p>
+              </div>
+              <div class="select-country__modal">
+                <div class="alphabet-table">
+                  <div class="alphabet-table__item alphabet-table__item--active">а</div>
+                  <div class="alphabet-table__item">б</div>
+                  <div class="alphabet-table__item">в</div>
+                  <div class="alphabet-table__item">г</div>
+                  <div class="alphabet-table__item">д</div>
+                  <div class="alphabet-table__item">е</div>
+                  <div class="alphabet-table__item">з</div>
+                  <div class="alphabet-table__item">и</div>
+                  <div class="alphabet-table__item">к</div>
+                  <div class="alphabet-table__item">л</div>
+                  <div class="alphabet-table__item">м</div>
+                  <div class="alphabet-table__item">н</div>
+                  <div class="alphabet-table__item">о</div>
+                  <div class="alphabet-table__item">п</div>
+                  <div class="alphabet-table__item">р</div>
+                  <div class="alphabet-table__item">с</div>
+                  <div class="alphabet-table__item">т</div>
+                  <div class="alphabet-table__item">у</div>
+                  <div class="alphabet-table__item">ф</div>
+                  <div class="alphabet-table__item">х</div>
+                  <div class="alphabet-table__item">ч</div>
+                  <div class="alphabet-table__item">ш</div>
+                  <div class="alphabet-table__item">э</div>
+                  <div class="alphabet-table__item">ю</div>
+                  <div class="alphabet-table__item">я</div>
+                </div>
                 <ul class="countries">
                   <li class="countries__item">Австралия</li>
                   <li class="countries__item">Австрия</li>
@@ -391,7 +420,7 @@
               <p class="add-country__text">Добавить страну</p>
               <button class="add-country__button"></button>
             </div>
-            <button class="next-step" type="button">Следующий шаг</button>
+            <button class="next-step next-step--second-step" type="button">Следующий шаг</button>
             <a class="previous-step" href="#first-step__section">На шаг назад</a>
           </div>
 

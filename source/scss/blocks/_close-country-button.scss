@@ -1,0 +1,17 @@
+.close-country-button {
+  @include reset-default-button-style;
+  background-color: $pale-grey;
+  border-radius: 50%;
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  left: 95%;
+  top: -10px;
+  z-index: 3;
+
+  svg {
+    width: 9px;
+    height: 9px;
+    fill: $grey;
+  }
+}

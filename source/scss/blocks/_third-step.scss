@@ -1,0 +1,32 @@
+.third-step {
+  display: flex;
+  flex-direction: column;
+  background-color: $white;
+  border-radius: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.third-step__title {
+  color: $dark-slate-blue;
+  line-height: 20px;
+  margin: 0;
+  margin-top: 22px;
+}
+
+.third-step__description {
+  margin-bottom: 18px;
+}
+
+.third-step__textarea-label {
+  font-family: $font;
+  font-size: 18px;
+  font-weight: 500;
+  color: $dark-slate-blue;
+  margin-bottom: 16px;
+  margin-left: 12px;
+}
+
+.third-step__textarea {
+  display: flex;
+}

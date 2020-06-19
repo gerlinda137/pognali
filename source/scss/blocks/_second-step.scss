@@ -1,4 +1,4 @@
-.first-step {
+.second-step {
   display: flex;
   flex-direction: column;
   background-color: $white;
@@ -8,13 +8,13 @@
   margin-bottom: 10px;
 }
 
-.first-step__title {
+.second-step__title {
   color: $dark-slate-blue;
   line-height: 20px;
   margin: 0;
   margin-top: 22px;
 }
 
-.first-step__description {
-  margin-bottom: 18px;
+.second-step__description {
+  margin-bottom: 22px;
 }
