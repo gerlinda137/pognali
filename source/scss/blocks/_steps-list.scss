@@ -1,0 +1,49 @@
+.steps-list {
+  color: $dark-slate-blue;
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  position: absolute;
+
+  &--first-step {
+    top: -44px;
+    right: 1px;
+  }
+
+  &--second-step {
+    display: none;
+  }
+
+  &--third-step {
+    display: none;
+  }
+
+}
+
+.steps-list__item {
+  margin-right: 15px;
+  position: relative;
+
+  &::before {
+    content: "";
+    background-color: $steel-grey;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    opacity: 0.3;
+    top: 10px;
+    display: block;
+
+  }
+
+  &--active::before {
+    background-color: $dark-slate-blue;
+    opacity: 1;
+  }
+
+  span {
+    color: transparent;
+    font-size: 0;
+  }
+}

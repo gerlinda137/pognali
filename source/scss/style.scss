@@ -1,3 +1,9 @@
+// *,
+// *::before,
+// *::after {
+//   outline: darkorange dashed 1px;
+// }
+
 /*Служебные*/
 @import "includes/variables";
 @import "includes/mixins";
@@ -51,10 +57,11 @@
 @import "blocks/dates";
 @import "blocks/add-plan";
 @import "blocks/first-step";
+@import "blocks/steps-list";
 @import "blocks/step-description";
 @import "blocks/search-companions";
 @import "blocks/duration";
-@import "blocks/with-children-label";
+@import "blocks/with-children";
 @import "blocks/calender";
 @import "blocks/month-switcher";
 @import "blocks/calender-table";
@@ -64,9 +71,10 @@
 @import "blocks/close-country-button";
 @import "blocks/alphabet-table";
 @import "blocks/countries";
-
+@import "blocks/add-country";
 @import "blocks/previous-step";
 @import "blocks/third-step";
+@import "blocks/submit-form";
 
 
 

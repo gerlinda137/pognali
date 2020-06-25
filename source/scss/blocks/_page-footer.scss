@@ -1,15 +1,27 @@
 .page-footer {
   display: flex;
 
+
+  &--index {
+    margin-top: -248px;
+
+    .page-footer__container {
+      padding-bottom: 17px;
+    }
+  }
+
+  &--form {
+    margin-top: -25px;
+
+  }
 }
 
 .page-footer__container {
   display: flex;
   flex-direction: column;
   background-color: $white;
-  border-top-left-radius: 40px;
+  border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  margin-top: -248px;
   width: 100%;
 }
 

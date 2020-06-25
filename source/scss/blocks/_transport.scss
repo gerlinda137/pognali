@@ -31,10 +31,6 @@
   opacity: 0.15;
   fill: $dark-slate-blue;
 
-  &--active {
-    opacity: 1.0;
-  }
-
   &--user-profile {
     height: 16px;
   }
@@ -49,4 +45,12 @@
   @include user-profile-subtitle;
   width: 110px;
   left: 79px;
+}
+
+.transport__input:checked+.transport__icon svg {
+  opacity: 1.0;
+}
+
+.transport__input:disabled+.transport__icon svg {
+  opacity: 1.0;
 }

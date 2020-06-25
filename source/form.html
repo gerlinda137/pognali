@@ -128,26 +128,24 @@
             <h3 class="transport__title">Транспорт</h3>
             <ul class="transport transport--user-profile__list">
               <li class="transport__item">
-                <input type="checkbox" name="plane" class="transport__plane visually-hidden" multiple checked>
-                <span class="transport__plane-icon"><svg
-                    class="transport__svg transport__svg--active transport__svg--user-profile"
+                <input type="checkbox" name="plane" class="transport__input visually-hidden" multiple checked>
+                <span class="transport__icon"><svg class="transport__svg transport__svg--user-profile"
                     xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19 21">
                     <path
                       d="M18.9 18.9c-.1-.3-3.7-10.1-3.7-10.1-.1-.5.1-.7.3-1.1 0 0 2.1-3.5 2.8-4.6.7-1.2.6-2.3-.1-2.8s-1.7-.1-2.5 1-3 4.5-3 4.5c-.3.4-.4.7-.9.8-.1-.1-10.3.4-10.6.4-.3 0-.7.1-1 .6-.4.7-.2.9.2 1 0 0 8 2.6 8.3 2.7.3 0 .3.2.2.6-.2.4-1.4 2.3-1.6 2.6-.1.2-.2.2-.4.3l-2.8 1c-.1 0-.3.1-.4.3l-.4.6c-.2.3-.1.5.2.5.3.1 2.1.2 2.1.2s.3.1.4.1c.2.1.4.3.2.6-.3.6-.4 1.2-.2 1.3s.6-.2 1-.7c.2-.3.4-.2.6 0 .2-.1.4.1.4.1s.8 1.6 1 1.9c.2.3.4.3.6 0l.4-.6c.1-.1.1-.3.1-.5l-.3-3.1c0-.2 0-.2.1-.5.1-.2 1.4-2.2 1.6-2.5.2-.3.4-.3.6-.1.2.2 5.7 6.7 5.7 6.7.3.3.5.4.9-.2.4-.4.3-.8.2-1z" />
                   </svg></span>
               </li>
               <li class="transport__item">
-                <input type="checkbox" name="proper-bus" class="transport__bus visually-hidden" multiple checked>
-                <span class="transport__bus-icon"><svg
-                    class="transport__svg transport__svg--user-profile transport__svg--active"
+                <input type="checkbox" name="proper-bus" class="transport__input visually-hidden" multiple checked>
+                <span class="transport__icon"><svg class="transport__svg transport__svg--user-profile"
                     xmlns="http://www.w3.org/2000/svg" viewbox="0 0 17 21">
                     <path
                       d="M16.2 3.1c-.2-1.2-1-1.6-2.1-2.1-1.1-.4-3.7-1-5.6-1C6.6 0 4 .6 2.9 1c-1.1.5-1.8.9-2.1 2.1L0 9.5v8.8h1.4v1.4c0 1.7 2.5 1.7 2.5 0v-1.4h9.2v1.4c0 1.7 2.5 1.7 2.5 0v-1.4H17V9.5l-.8-6.4zM5 1.6h7c.7 0 .7 1 0 1H5c-.7.1-.7-1 0-1zm-2.3 14c-.6 0-1.2-.5-1.2-1.2s.5-1.2 1.2-1.2c.6 0 1.2.5 1.2 1.2-.1.6-.6 1.2-1.2 1.2zm5.7-5.4H2.2c-.6 0-.7-.4-.7-.9l.6-4.7c.1-.6.3-.9 1-.9h10.7c.7 0 .9.4 1 .9l.6 4.7c.1.4-.1.9-.7.9H8.4zm5.9 5.4c-.6 0-1.2-.5-1.2-1.2s.5-1.2 1.2-1.2c.6 0 1.2.5 1.2 1.2 0 .6-.5 1.2-1.2 1.2z" />
                   </svg></span>
               </li>
               <li class="transport__item">
-                <input type="checkbox" name="bike" class=" transport__bike visually-hidden" multiple>
-                <span class="transport__bike-icon">
+                <input type="checkbox" name="bike" class="transport__input visually-hidden" multiple>
+                <span class="transport__icon">
                   <svg class="transport__svg transport__svg--user-profile" xmlns="http://www.w3.org/2000/svg"
                     viewbox="0 0 24 21">
                     <path
@@ -156,9 +154,8 @@
                 </span>
               </li>
               <li class="transport__item">
-                <input type="checkbox" name="on-foot" class="transport__on-foot visually-hidden" multiple checked>
-                <span class="transport__on-foot"><svg
-                    class="transport__svg transport__svg--active transport__svg--user-profile"
+                <input type="checkbox" name="on-foot" class="transport__input visually-hidden" multiple checked>
+                <span class="transport__icon"><svg class="transport__svg transport__svg--user-profile"
                     xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 21">
                     <ellipse cx="14.3" cy="2" rx="2.1" ry="2" />
                     <path
@@ -202,6 +199,11 @@
         <div class="add-plan__container">
           <h2 class="add-plan__title">Добавить план:</h2>
           <div class="first-step">
+            <ul class="steps-list steps-list--first-step">
+              <li class="steps-list__item steps-list__item--active"><span>Даты</span></li>
+              <li class="steps-list__item"><span>Маршрут</span></li>
+              <li class="steps-list__item"><span>Развлечения</span></li>
+            </ul>
             <a name="first-step__section"></a>
             <h3 class="first-step__title step-title">Шаг 1.<br>Даты пребывания</h3>
             <p class="first-step__description step-description">
@@ -231,10 +233,13 @@
                 <button class="duration__plus-button" type="button">+</button>
               </div>
             </div>
-            <label class="with-children-label">
-              <input class="with-children-checkbox" type="checkbox" checked>
-              Можно с детьми
-            </label>
+            <div class="with-children">
+              <label class="with-children__label">
+                <input class="with-children__input" type="checkbox" checked>
+                Можно с детьми
+                <span class="with-children__checkbox"></span>
+              </label>
+            </div>
             <div class="calender">
               <div class="month-switcher">
                 <button type="button" class="month-switcher__button-left"><svg fill="#b2b2b2"
@@ -320,6 +325,11 @@
           <div class="second-step">
             <a name="second-step__section"></a>
             <h3 class="second-step__title step-title">Шаг 2.<br>Маршрут</h3>
+            <ul class="steps-list steps-list--second-step">
+              <li class="steps-list__item"><span>Даты</span></li>
+              <li class="steps-list__item steps-list__item--active"><span>Маршрут</span></li>
+              <li class="steps-list__item"><span>Развлечения</span></li>
+            </ul>
             <p class="second-step__description step-description">
               Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.
             </p>
@@ -359,7 +369,7 @@
                   </svg></button>
               </div>
             </div>
-            <div class="select-country select-country--in-selection">
+            <div class="select-country select-country--unselected">
               <div class="select-country__container">
                 <button class="close-country-button"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 9 9">
                     <path
@@ -372,7 +382,7 @@
                     </svg></button>
                 </p>
               </div>
-              <div class="select-country__modal">
+              <div class="select-country__modal select-country__modal--hidden">
                 <div class="alphabet-table">
                   <div class="alphabet-table__item alphabet-table__item--active">а</div>
                   <div class="alphabet-table__item">б</div>
@@ -416,9 +426,10 @@
               </div>
             </div>
             <div class="add-country">
-              <button class="close-country-button"></button>
-              <p class="add-country__text">Добавить страну</p>
-              <button class="add-country__button"></button>
+              <p class="add-country__text">Добавить страну
+                <button class="add-country__button"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 14 14">
+                    <path fill="#606161" d="M8 6V0H6v6H0v2h6v6h2V8h6V6z" /></svg></button>
+              </p>
             </div>
             <button class="next-step next-step--second-step" type="button">Следующий шаг</button>
             <a class="previous-step" href="#first-step__section">На шаг назад</a>
@@ -426,15 +437,32 @@
 
           <div class="third-step">
             <h3 class="third-step__title step-title">Шаг 3.<br>Развлечения</h3>
+            <ul class="steps-list steps-list--third-step">
+              <li class="steps-list__item"><span>Даты</span></li>
+              <li class="steps-list__item"><span>Маршрут</span></li>
+              <li class="steps-list__item steps-list__item--active"><span>Развлечения</span></li>
+            </ul>
             <p class="third-step__description step-description">
               Наконец, расскажите о своих планах времяпровождения.
               Можно писать в свободной форме и ставить тэги.
             </p>
-            <label class="third-step__textarea-label" for="first-country">Босния и Герцеговина</label>
-            <textarea class="third-step__textarea" name="third-step__textarea" id="first-country" cols="30" rows="10"
-              placeholder="План действий"></textarea>
-            <label class="third-step__textarea-label" for="second-country">Чехия</label>
-            <textarea class="third-step__textarea" name="third-step__textarea" id="second-country" cols="30" rows="10">
+            <label class="third-step__textarea-label" for="first-country">Босния и Герцеговина
+              <span class="third-step__flag-container">
+                <img class="select-country__flag-image" src="img/flag-bosnia.svg" width="35" height="24"
+                  alt="Флаг страны">
+              </span>
+            </label>
+            <div class="third-step__textarea-container">
+              <textarea class="third-step__textarea" name="third-step__textarea" id="first-country"
+                placeholder="План действий"></textarea>
+            </div>
+            <label class="third-step__textarea-label" for="second-country">Чехия
+              <span class="third-step__flag-container">
+                <img class="select-country__flag-image" src="img/flag-czech.svg" width="35" height="24"
+                  alt="Флаг страны">
+              </span>
+            </label>
+            <textarea class="third-step__textarea" name="third-step__textarea" id="second-country">
               Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.
             </textarea>
             <button class="submit-form" type="submit">Отправить</button>
@@ -445,7 +473,7 @@
 
     </form>
   </main>
-  <footer class="page-footer">
+  <footer class="page-footer page-footer--form">
     <div class="page-footer__container">
       <img class="page-footer__logo" src="img/logo-mobile-blue@2x.png" alt="Погнали?" width="96" height="17">
       <ul class="social-media">

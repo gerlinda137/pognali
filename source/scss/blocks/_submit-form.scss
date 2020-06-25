@@ -1,0 +1,17 @@
+.submit-form {
+  @include reset-default-button-style;
+  background-color: $light-gold;
+  width: 100%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 30px;
+
+  font-family: $font;
+  text-align: center;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $dark-two;
+  margin-bottom: 12px;
+}
