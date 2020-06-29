@@ -13,17 +13,17 @@
     margin-top: 14px;
     margin-bottom: 14px;
     width: 133px;
-
-    .transport__item span {
-      width: 33px;
-      height: 33px;
-      background-color: $white;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
   }
+}
+
+.transport__icon {
+  width: 33px;
+  height: 33px;
+  background-color: $white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .transport__svg {
@@ -47,10 +47,27 @@
   left: 79px;
 }
 
-.transport__input:checked+.transport__icon svg {
+.transport__input {
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  opacity: 0;
+}
+
+.transport__input:checked+.transport__svg {
   opacity: 1.0;
 }
 
-.transport__input:disabled+.transport__icon svg {
-  opacity: 1.0;
+.transport__icon:hover {
+  opacity: 0.7;
+  box-shadow: 0px 2px 10px 0 rgba(0, 0, 0, 0.08);
 }
+
+.transport__icon:active {
+  opacity: 0.3;
+  background-color: $pale-grey-three;
+}
+
+// .transport__input:disabled+.transport__svg {
+//   opacity: 1.0;
+// }
