@@ -1,0 +1,32 @@
+.continents {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+}
+
+.continents__item {
+  margin-bottom: 5px;
+}
+
+.continents__item-link {
+  font-family: $font;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: $dark-blue-grey-30;
+  text-decoration: none;
+
+  &:hover {
+    color: $dark-blue-grey-60;
+  }
+
+  &:active {
+    color: $dark-blue-grey;
+  }
+
+  &--active {
+    color: $dark-blue-grey;
+  }
+}

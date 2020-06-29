@@ -1,0 +1,50 @@
+.country-filters {
+  display: flex;
+  flex-direction: column;
+  background-color: $pale-grey-four;
+  margin-top: -20px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.country-filters__header {
+  display: flex;
+  margin-top: 35px;
+  margin-bottom: 14px;
+  justify-content: space-between;
+}
+
+.country-filters__more-button {
+  @include reset-default-button-style;
+  padding: 0;
+  margin-right: -13px;
+}
+
+.country-filters__more-button-icon {
+  width: 15px;
+  height: 10px;
+}
+
+.country-filters__title {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 22px;
+  color: $dark-blue-grey;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.country-filters__close-button {
+  @include reset-default-button-style;
+}
+
+.country-filters__close-button-icon {
+  width: 12px;
+  height: 12px;
+}
+
+.country-filters__container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 25px;
+}
