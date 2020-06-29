@@ -11,8 +11,18 @@
   justify-content: center;
 
   &--user-profile {
+    display: flex;
     justify-content: left;
-    width: 211px;
+    width: 216px;
+    text-indent: -66px;
+    border: none;
+    background-color: $pale-grey;
+    font-family: $font;
+    font-size: 16px;
+    line-height: 22px;
+    color: $greyish-brown;
+    resize: none;
+    margin-bottom: 7px;
   }
 
 }

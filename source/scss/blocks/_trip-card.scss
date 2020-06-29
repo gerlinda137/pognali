@@ -30,4 +30,12 @@
   display: flex;
   padding-left: 0;
   margin-bottom: 20px;
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.1);
+  }
 }
