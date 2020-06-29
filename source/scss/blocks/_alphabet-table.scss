@@ -3,6 +3,16 @@
   flex-wrap: wrap;
   width: 100%;
   z-index: 2;
+
+  &--catalog {
+    border-top: solid 1px $cloudy-blue;
+    width: 220px;
+
+    .alphabet-table__item--active {
+      background-color: $dark-slate-blue;
+      color: $white;
+    }
+  }
 }
 
 .alphabet-table__item {

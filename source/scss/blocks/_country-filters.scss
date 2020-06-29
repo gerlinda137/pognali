@@ -3,8 +3,8 @@
   flex-direction: column;
   background-color: $pale-grey-four;
   margin-top: -20px;
-  padding-left: 25px;
-  padding-right: 25px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .country-filters__header {
@@ -43,8 +43,51 @@
   height: 12px;
 }
 
+.country-filters__inner-container {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
 .country-filters__container {
   display: flex;
   flex-direction: column;
   padding-left: 25px;
+  padding-right: 25px;
+}
+
+.country-filters__minimise-button {
+  @include reset-default-button-style;
+  display: flex;
+  border-radius: 20px;
+  background-color: $light-periwinkle;
+  font-family: $font;
+  font-size: 16.5px;
+  font-weight: bold;
+  line-height: 29.5px;
+  color: $dark-two;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 4px 84px 6px 109px;
+  letter-spacing: 0.5px;
+  position: relative;
+  margin-bottom: 27px;
+
+  &::before {
+    content: '';
+    background-image: url(../../img/filter-close.svg);
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    left: 85px;
+    top: 13px;
+  }
+}
+
+.country-filters__dropdown {
+  display: flex;
+  flex-direction: column;
+
+  &--hidden {
+    display: none;
+  }
 }
