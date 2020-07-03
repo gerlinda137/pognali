@@ -1,0 +1,72 @@
+.companion-filter {
+  display: flex;
+  flex-direction: column;
+  background-color: $light-gold;
+  border-radius: 20px;
+}
+
+.companion-filter__container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.companion-filter__title {
+  font-size: 22.5px;
+  text-align: left;
+  color: $dark-slate-blue;
+  margin-top: 25px;
+  margin-bottom: 23px;
+  line-height: 22.5px;
+  width: 112px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.companion-filter__title-button-wrapper {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid $macaroni-and-cheese;
+  padding-top: 10px;
+  padding-bottom: 11px;
+}
+
+.companion-filter__universal-title {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $dark-slate-blue;
+  margin: 0;
+
+}
+
+.companion-filter__more-button {
+  @include reset-default-button-style;
+  padding: 0;
+  height: 4px;
+
+  svg {
+    width: 8px;
+    height: 4px;
+    fill: $dark-blue-grey;
+  }
+}
+
+.companion-filter__submit-button {
+  @include reset-default-button-style;
+
+  font-family: $font;
+  font-size: 17px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $dark-two;
+  border-radius: 20px;
+  background-color: $white;
+  padding: 6px 70px;
+  margin-bottom: 22px;
+}

@@ -157,269 +157,354 @@
         </div>
       </div>
     </section>
-    <form class="companion-filter">
-      <h2 class="companion-filter__title">Подберите идеального попутчика</h2>
-      <h3 class="hobby__title">Хобби</h3>
-      <div class="hobby__container">
-        <input type="checkbox" name="gym" id="hobby__gym">
-        <label for="hobby__gym">Спортзал</label>
-
-        <input type="checkbox" name="hookah" id="hobby__hookah">
-        <label for="hobby__hookah">Кальян</label>
-
-        <input type="checkbox" name="sofa" id="hobby__sofa">
-        <label for="hobby__sofa">Диван</label>
-      </div>
-
-      <h3 class="music__title">Музыка</h3>
-      <div class="music__container">
-        <input type="checkbox" name="hard-rock" id="music__hard-rock">
-        <label for="music__hard-rock">Тяжелый рок</label>
-
-        <input type="checkbox" name="russian-rap" id="music__russian-rap">
-        <label for="music__russian-rap">Русский рэп</label>
-
-        <input type="checkbox" name="eurodance" id="music__eurodance">
-        <label for="music__eurodance">Евроденс</label>
-      </div>
-
-      <h3 class="food__title">Еда</h3>
-      <div class="food__container">
-        <input type="checkbox" name="meat" id="food__meat">
-        <label for="food__meat">Мясоед</label>
-
-        <input type="checkbox" name="proper-nutrition" id="food__proper-nutrition">
-        <label for="food__proper-nutrition">Сидит на ПП</label>
-
-        <input type="checkbox" name="vegan" id="food__vegan">
-        <label for="food__vegan">Веган-сыроед</label>
-      </div>
-
-      <h3 class="transport__title">Транспорт</h3>
-      <div class="transport__container">
-        <input type="checkbox" name="plane" class="transport__plane visually-hidden" multiple checked>
-        <span class="transport__plane-icon"></span>
-
-        <input type="checkbox" name="proper-bus" class="transport__bus visually-hidden" multiple checked>
-        <span class="transport__bus-icon"></span>
-
-        <input type="checkbox" name="bike" class=" transport__bike visually-hidden" multiple>
-        <span class="transport__bike-icon"></span>
-
-        <input type="checkbox" name="on-foot" class="transport__on-foot visually-hidden" multiple checked>
-        <span class="transport__on-foot"></span>
-      </div>
-
-      <h3 class="level__title">Левел</h3>
-      <output name="output" for="level__range"></output>
-      <input type="range" name="range" id="level__range">
-    </form>
-    <section class="companions">
-      <ul class="companions-list">
-        <li class="companions-list__item">
-          <div class="companion-card">
-            <h3 class="companion-card__title">Таня Фирсова</h3>
-            <img src="https://via.placeholder.com/70x70" alt="Фото пользователя" class="companion-card__image"
-              width="70" height="70">
-            <span class="companion-card__likes">1,5 m</span>
-            <ul class="hashtags">
-              <li class="hashtags__item">#ЗОЖ</li>
-              <li class="hashtags__item">#ПП</li>
-              <li class="hashtags__item">#Фитнес</li>
-              <li class="hashtags__item">#пляж</li>
-              <li class="hashtags__item">#авокадо</li>
-              <li class="hashtags__item">#смузи</li>
-            </ul>
-            <ul class="visit-wishlist">
-              <li class="visit-wishlist__item">Шри-ланка</li>
-              <li class="visit-wishlist__item">Таиланд</li>
-              <li class="visit-wishlist__item">Сейшелы</li>
-            </ul>
-            <ul class="transport">
-              <li class="transport__item">
-                <input type="checkbox" name="plane" class="transport__plane visually-hidden" multiple checked>
-                <span class="transport__plane-icon"></span>
-              </li>
-              <li class="transport__item">
-                <input type="checkbox" name="proper-bus" class="transport__bus visually-hidden" multiple>
-                <span class="transport__bus-icon"></span>
-              </li>
-              <li class="transport__item">
-                <input type="checkbox" name="bike" class=" transport__bike visually-hidden" multiple>
-                <span class="transport__bike-icon"></span>
-              </li>
-              <li class="transport__item">
-                <input type="checkbox" name="on-foot" class="transport__on-foot visually-hidden" multiple>
-                <span class="transport__on-foot"></span>
-              </li>
-            </ul>
-            <div class="companion-card__level">
-              <span class="companion-card__level-text">левел:</span>
-              <div class="level-sign">
-                <span class="level-sign__number">99</span>
-                <span class="level-sign__signature">level</span>
-                <svg class="level-sign__image">
-                  <circle class="level-sign__image-background" cx="57" cy="57" r="30"></circle>
-                  <circle class="level-sign__image-progress" cx="57" cy="57" r="30"></circle>
-                </svg>
-              </div>
-            </div>
-            <button type="button" class="companion-card__invite-button">Позвать!</button>
+    <div class="catalog-inner-container">
+      <form class="companion-filter">
+        <div class="companion-filter__container">
+          <h2 class="companion-filter__title">Подберите идеального попутчика</h2>
+          <div class="companion-filter__title-button-wrapper">
+            <h3 class="hobby__title companion-filter__universal-title">Хобби</h3>
+            <button class="companion-filter__more-button"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 10 5">
+                <path d="M5 5L0 0h10z" /></svg></button>
           </div>
-        </li>
-        <li class="companions-list__item">
-          <div class="companion-card">
-            <h3 class="companion-card__title">Петя Демин</h3>
-            <img src="https://via.placeholder.com/70x70" alt="Фото пользователя" class="companion-card__image"
-              width="70" height="70">
-            <span class="companion-card__likes">1500</span>
-            <ul class="hashtags">
-              <li class="hashtags__item"><a class="hashtags-item__link">#бургер</a></li>
-              <li class="hashtags__item"><a class="hashtags-item__link">#бар</a></li>
-              <li class="hashtags__item"><a class="hashtags-item__link">#футбол</a></li>
-              <li class="hashtags__item"><a class="hashtags-item__link">#концерт</a></li>
-              <li class="hashtags__item"><a class="hashtags-item__link">#крафт</a></li>
-            </ul>
-            <ul class="visit-wishlist">
-              <li class="visit-wishlist__item"><a class="visit-wishlist__item-link">Бельгия</a></li>
-              <li class="visit-wishlist__item"><a class="visit-wishlist__item-link">Чехия</a></li>
-            </ul>
-            <ul class="transport">
-              <li class="transport__item">
-                <input type="checkbox" name="plane" class="transport__plane visually-hidden" multiple checked>
-                <span class="transport__plane-icon"></span>
-              </li>
-              <li class="transport__item">
-                <input type="checkbox" name="proper-bus" class="transport__bus visually-hidden" multiple checked>
-                <span class="transport__bus-icon"></span>
-              </li>
-              <li class="transport__item">
-                <input type="checkbox" name="bike" class=" transport__bike visually-hidden" multiple>
-                <span class="transport__bike-icon"></span>
-              </li>
-              <li class="transport__item">
-                <input type="checkbox" name="on-foot" class="transport__on-foot visually-hidden" multiple checked>
-                <span class="transport__on-foot"></span>
-              </li>
-            </ul>
-            <div class="companion-card__level">
-              <span class="companion-card__level-text">левел:</span>
-              <div class="level-sign">
-                <span class="level-sign__number">80</span>
-                <span class="level-sign__signature">level</span>
-                <svg class="level-sign__image">
-                  <circle class="level-sign__image-background" cx="57" cy="57" r="30"></circle>
-                  <circle class="level-sign__image-progress" cx="57" cy="57" r="30"></circle>
-                </svg>
-              </div>
-            </div>
-            <button type="button" class="companion-card__invite-button">Позвать!</button>
+          <div class="hobby hobby--hidden">
+            <label class="hobby__label">
+              <input class="hobby__input" type="checkbox" name="gym" id="hobby__gym">
+              Спортзал
+              <span class="hobby__checkbox"></span>
+            </label>
+            <label class="hobby__label">
+              <input class="hobby__input" type="checkbox" name="hookah" id="hobby__hookah">
+              Кальян
+              <span class="hobby__checkbox"></span>
+            </label>
+            <label class="hobby__label">
+              <input class="hobby__input" type="checkbox" name="sofa" id="hobby__sofa">
+              Диван
+              <span class="hobby__checkbox"></span>
+            </label>
           </div>
-        </li>
-        <li class="companions-list__item">
-          <div class="companion-card">
-            <h3 class="companion-card__title">Марк Смолов</h3>
-            <img src="https://via.placeholder.com/70x70" alt="Фото пользователя" class="companion-card__image"
-              width="70" height="70">
-            <span class="companion-card__likes">170</span>
-            <ul class="hashtags">
-              <li class="hashtags__item"><a class="hashtags-item__link">#рэп</a></li>
-              <li class="hashtags__item"><a class="hashtags-item__link">#тату</a></li>
-              <li class="hashtags__item"><a class="hashtags-item__link">#хайпбист</a></li>
-              <li class="hashtags__item"><a class="hashtags-item__link">#кроссовки</a></li>
-              <li class="hashtags__item"><a class="hashtags-item__link">#суприм</a></li>
-            </ul>
-            <ul class="visit-wishlist">
-              <li class="visit-wishlist__item"><a class="visit-wishlist__item-link">США</a></li>
-              <li class="visit-wishlist__item"><a class="visit-wishlist__item-link">Австралия</a></li>
-              <li class="visit-wishlist__item"><a class="visit-wishlist__item-link">Доминика</a></li>
-            </ul>
-            <ul class="transport">
-              <li class="transport__item">
-                <input type="checkbox" name="plane" class="transport__plane visually-hidden" multiple checked>
-                <span class="transport__plane-icon"></span>
-              </li>
-              <li class="transport__item">
-                <input type="checkbox" name="proper-bus" class="transport__bus visually-hidden" multiple>
-                <span class="transport__bus-icon"></span>
-              </li>
-              <li class="transport__item">
-                <input type="checkbox" name="bike" class=" transport__bike visually-hidden" multiple checked>
-                <span class="transport__bike-icon"></span>
-              </li>
-              <li class="transport__item">
-                <input type="checkbox" name="on-foot" class="transport__on-foot visually-hidden" multiple>
-                <span class="transport__on-foot"></span>
-              </li>
-            </ul>
-            <div class="companion-card__level">
-              <span class="companion-card__level-text">левел:</span>
-              <div class="level-sign">
-                <span class="level-sign__number">25</span>
-                <span class="level-sign__signature">level</span>
-                <svg class="level-sign__image">
-                  <circle class="level-sign__image-background" cx="57" cy="57" r="30"></circle>
-                  <circle class="level-sign__image-progress" cx="57" cy="57" r="30"></circle>
-                </svg>
-              </div>
-            </div>
-            <button type="button" class="companion-card__invite-button">Позвать!</button>
+
+          <div class="companion-filter__title-button-wrapper">
+            <h3 class="music__title companion-filter__universal-title">Музыка</h3>
+            <button class="companion-filter__more-button"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 10 5">
+                <path d="M5 5L0 0h10z" /></svg></button>
           </div>
-        </li>
-        <li class="companions-list__item">
-          <div class="companion-card">
-            <h3 class="companion-card__title">Лариса Роговая</h3>
-            <img src="https://via.placeholder.com/70x70" alt="Фото пользователя" class="companion-card__image"
-              width="70" height="70">
-            <span class="companion-card__likes">23</span>
-            <ul class="hashtags">
-              <li class="hashtags__item"><a class="hashtags-item__link">#образование</a></li>
-              <li class="hashtags__item"><a class="hashtags-item__link">#карьера</a></li>
-              <li class="hashtags__item"><a class="hashtags-item__link">#учеба</a></li>
-              <li class="hashtags__item"><a class="hashtags-item__link">#линкедин</a></li>
-            </ul>
-            <ul class="visit-wishlist">
-              <li class="visit-wishlist__item"><a class="visit-wishlist__item-link">Великобритания</a></li>
-              <li class="visit-wishlist__item"><a class="visit-wishlist__item-link">Германия</a></li>
-            </ul>
-            <ul class="transport">
-              <li class="transport__item">
-                <input type="checkbox" name="plane" class="transport__plane visually-hidden" multiple checked>
-                <span class="transport__plane-icon"></span>
-              </li>
-              <li class="transport__item">
-                <input type="checkbox" name="proper-bus" class="transport__bus visually-hidden" multiple checked>
-                <span class="transport__bus-icon"></span>
-              </li>
-              <li class="transport__item">
-                <input type="checkbox" name="bike" class=" transport__bike visually-hidden" multiple>
-                <span class="transport__bike-icon"></span>
-              </li>
-              <li class="transport__item">
-                <input type="checkbox" name="on-foot" class="transport__on-foot visually-hidden" multiple>
-                <span class="transport__on-foot"></span>
-              </li>
-            </ul>
-            <div class="companion-card__level">
-              <span class="companion-card__level-text">левел:</span>
-              <div class="level-sign">
-                <span class="level-sign__number">50</span>
-                <span class="level-sign__signature">level</span>
-                <svg class="level-sign__image">
-                  <circle class="level-sign__image-background" cx="57" cy="57" r="30"></circle>
-                  <circle class="level-sign__image-progress" cx="57" cy="57" r="30"></circle>
-                </svg>
-              </div>
-            </div>
-            <button type="button" class="companion-card__invite-button">Позвать!</button>
+          <div class="music">
+            <label class="music__label">
+              <input checked class="music__input" type="checkbox">
+              Тяжелый рок
+              <span class="music__checkbox"></span>
+            </label>
+            <label class="music__label">
+              <input class="music__input" type="checkbox">
+              Русский рэп
+              <span class="music__checkbox"></span>
+            </label>
+            <label class="music__label">
+              <input class="music__input" type="checkbox">
+              Евроденс
+              <span class="music__checkbox"></span>
+            </label>
           </div>
-        </li>
-      </ul>
-      <button class="companions__show-more">Показать еще</button>
-    </section>
-    <div class="page-navigation">
-      <button class="page-navigation__previous-page">svg</button>
-      <button class="page-navigation__next-page">svg</button>
+          <div class="companion-filter__title-button-wrapper">
+            <h3 class="food__title companion-filter__universal-title">Еда</h3>
+            <button class="companion-filter__more-button"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 10 5">
+                <path d="M5 5L0 0h10z" /></svg></button>
+          </div>
+          <div class="food food--hidden">
+            <label class="food__label">
+              <input class="food__input" type="checkbox">
+              Мясоед
+              <span class="food__checkbox"></span>
+            </label>
+            <label class="food__label">
+              <input class="food__input" type="checkbox">
+              Сидит на ПП
+              <span class="food__checkbox"></span>
+            </label>
+            <label class="food__label">
+              <input class="food__input" type="checkbox">
+              Веган-сыроед
+              <span class="food__checkbox"></span>
+            </label>
+          </div>
+          <div class="companion-filter__title-button-wrapper">
+            <h3 class="companion-filter__universal-title companion-filter__universal-title--transport">Транспорт</h3>
+            <button class="companion-filter__more-button"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 10 5">
+                <path d="M5 5L0 0h10z" /></svg></button>
+          </div>
+          <ul class="transport transport--catalog">
+            <li class="transport__item">
+              <label class="transport__icon" for="plane">
+                <input type="checkbox" name="plane" class="transport__input" multiple checked>
+                <svg class="transport__svg transport__svg--user-profile" xmlns="http://www.w3.org/2000/svg"
+                  viewbox="0 0 19 21">
+                  <path
+                    d="M18.9 18.9c-.1-.3-3.7-10.1-3.7-10.1-.1-.5.1-.7.3-1.1 0 0 2.1-3.5 2.8-4.6.7-1.2.6-2.3-.1-2.8s-1.7-.1-2.5 1-3 4.5-3 4.5c-.3.4-.4.7-.9.8-.1-.1-10.3.4-10.6.4-.3 0-.7.1-1 .6-.4.7-.2.9.2 1 0 0 8 2.6 8.3 2.7.3 0 .3.2.2.6-.2.4-1.4 2.3-1.6 2.6-.1.2-.2.2-.4.3l-2.8 1c-.1 0-.3.1-.4.3l-.4.6c-.2.3-.1.5.2.5.3.1 2.1.2 2.1.2s.3.1.4.1c.2.1.4.3.2.6-.3.6-.4 1.2-.2 1.3s.6-.2 1-.7c.2-.3.4-.2.6 0 .2-.1.4.1.4.1s.8 1.6 1 1.9c.2.3.4.3.6 0l.4-.6c.1-.1.1-.3.1-.5l-.3-3.1c0-.2 0-.2.1-.5.1-.2 1.4-2.2 1.6-2.5.2-.3.4-.3.6-.1.2.2 5.7 6.7 5.7 6.7.3.3.5.4.9-.2.4-.4.3-.8.2-1z" />
+                </svg>
+              </label>
+            </li>
+            <li class="transport__item">
+              <label for="proper-bus" class="transport__icon">
+                <input type="checkbox" name="proper-bus" class="transport__input" multiple checked>
+                <svg class="transport__svg transport__svg--user-profile" xmlns="http://www.w3.org/2000/svg"
+                  viewbox="0 0 17 21">
+                  <path
+                    d="M16.2 3.1c-.2-1.2-1-1.6-2.1-2.1-1.1-.4-3.7-1-5.6-1C6.6 0 4 .6 2.9 1c-1.1.5-1.8.9-2.1 2.1L0 9.5v8.8h1.4v1.4c0 1.7 2.5 1.7 2.5 0v-1.4h9.2v1.4c0 1.7 2.5 1.7 2.5 0v-1.4H17V9.5l-.8-6.4zM5 1.6h7c.7 0 .7 1 0 1H5c-.7.1-.7-1 0-1zm-2.3 14c-.6 0-1.2-.5-1.2-1.2s.5-1.2 1.2-1.2c.6 0 1.2.5 1.2 1.2-.1.6-.6 1.2-1.2 1.2zm5.7-5.4H2.2c-.6 0-.7-.4-.7-.9l.6-4.7c.1-.6.3-.9 1-.9h10.7c.7 0 .9.4 1 .9l.6 4.7c.1.4-.1.9-.7.9H8.4zm5.9 5.4c-.6 0-1.2-.5-1.2-1.2s.5-1.2 1.2-1.2c.6 0 1.2.5 1.2 1.2 0 .6-.5 1.2-1.2 1.2z" />
+                </svg>
+              </label>
+            </li>
+            <li class="transport__item">
+              <label for="bike" class="transport__icon">
+                <input type="checkbox" name="bike" class="transport__input" multiple>
+                <svg class="transport__svg transport__svg--user-profile" xmlns="http://www.w3.org/2000/svg"
+                  viewbox="0 0 24 21">
+                  <path
+                    d="M16 3.6c1 0 1.8-.8 1.8-1.8S17 0 16 0s-1.8.8-1.8 1.8.8 1.8 1.8 1.8zm3 7.4c-2.8 0-5 2.3-5 5s2.2 5 5 5 5-2.3 5-5-2.2-5-5-5zm0 8.6c-1.9 0-3.5-1.6-3.5-3.5s1.6-3.5 3.5-3.5 3.5 1.6 3.5 3.5-1.6 3.5-3.5 3.5zM14.8 8.9H19V7.1h-3.2l-1.9-3.3c-.3-.5-.8-.8-1.5-.8-.5 0-.9.2-1.2.5L7.5 7.2c-.3.3-.5.7-.5 1.2 0 .6.3 1.2.8 1.5l3.3 2v5H13v-6.5l-2.2-1.7 2.3-2.4 1.7 2.6zM5 11c-2.8 0-5 2.3-5 5s2.2 5 5 5 5-2.3 5-5-2.2-5-5-5zm0 8.6c-1.9 0-3.5-1.6-3.5-3.5s1.6-3.5 3.5-3.5 3.5 1.5 3.5 3.5-1.6 3.5-3.5 3.5z" />
+                </svg>
+              </label>
+            </li>
+            <li class="transport__item">
+              <label for="on-foot" class="transport__icon">
+                <input type="checkbox" name="on-foot" class="transport__input" multiple checked>
+                <svg class="transport__svg transport__svg--user-profile" xmlns="http://www.w3.org/2000/svg"
+                  viewbox="0 0 20 21">
+                  <ellipse cx="14.3" cy="2" rx="2.1" ry="2" />
+                  <path
+                    d="M19.4 4.6c-.5-.2-1.2-.1-1.4.4l-.9 1.6L13 4.3c-.2-.1-.3-.1-.6-.1H7.9c-.4 0-.7.1-.9.5L5.3 7.6c-.3.5-.1 1.1.4 1.3.2.1.4.1.5.1.4 0 .8-.2 1-.5l1.4-2.4h1.6l-4.7 8.1H1.1c-.6 0-1.1.4-1.1 1s.5 1 1.1 1h5c.4 0 .7-.2.9-.5l1.9-3.2 3 2.6-.2 4.9c-.1.5.4 1 1 1h.1c.6 0 1-.4 1.1-.9l.3-5.4c0-.3-.1-.6-.3-.8l-2.6-2.2L14 7.1l3.1 1.8c0 .1.4.2.6.1.3-.1.5-.2.7-.5L19.9 6c.3-.5.1-1.1-.5-1.4z" />
+                </svg>
+              </label>
+            </li>
+          </ul>
+
+          <div class="companion-filter__title-button-wrapper">
+            <h3 class="level__title companion-filter__universal-title">Левел</h3>
+            <button class="companion-filter__more-button"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 10 5">
+                <path d="M5 5L0 0h10z" /></svg></button>
+          </div>
+          <div class="level-range">
+            <div class="level-range__container">
+              <input class="level-range__input level-range__input--first" type="number" value="30" min="1" max="100">
+              <span class="level-range__hyphen"></span>
+              <input class="level-range__input level-range__input--second" type="number" value="100" min="1" max="100">
+            </div>
+            <div class="level-range__bar-wrapper">
+              <button class="level-range__bar-button level-range__bar-button--first"></button>
+              <div class="level-range__bar-selected"></div>
+              <button class="level-range__bar-button level-range__bar-button--second"></button>
+              <div class="level-range__bar-base"></div>
+            </div>
+          </div>
+          <button class="companion-filter__submit-button" type="submit">Показать</button>
+        </div>
+      </form>
+      <section class="companions">
+        <ul class="companions-list">
+          <li class="companions-list__item">
+            <div class="companion-card">
+              <h3 class="companion-card__title">Таня Фирсова</h3>
+              <img src="https://via.placeholder.com/70x70" alt="Фото пользователя" class="companion-card__image"
+                width="70" height="70">
+              <span class="companion-card__likes">1,5 m</span>
+              <ul class="hashtags">
+                <li class="hashtags__item">#ЗОЖ</li>
+                <li class="hashtags__item">#ПП</li>
+                <li class="hashtags__item">#Фитнес</li>
+                <li class="hashtags__item">#пляж</li>
+                <li class="hashtags__item">#авокадо</li>
+                <li class="hashtags__item">#смузи</li>
+              </ul>
+              <ul class="visit-wishlist">
+                <li class="visit-wishlist__item">Шри-ланка</li>
+                <li class="visit-wishlist__item">Таиланд</li>
+                <li class="visit-wishlist__item">Сейшелы</li>
+              </ul>
+              <ul class="transport">
+                <li class="transport__item">
+                  <input type="checkbox" name="plane" class="transport__plane visually-hidden" multiple checked>
+                  <span class="transport__plane-icon"></span>
+                </li>
+                <li class="transport__item">
+                  <input type="checkbox" name="proper-bus" class="transport__bus visually-hidden" multiple>
+                  <span class="transport__bus-icon"></span>
+                </li>
+                <li class="transport__item">
+                  <input type="checkbox" name="bike" class=" transport__bike visually-hidden" multiple>
+                  <span class="transport__bike-icon"></span>
+                </li>
+                <li class="transport__item">
+                  <input type="checkbox" name="on-foot" class="transport__on-foot visually-hidden" multiple>
+                  <span class="transport__on-foot"></span>
+                </li>
+              </ul>
+              <div class="companion-card__level">
+                <span class="companion-card__level-text">левел:</span>
+                <div class="level-sign">
+                  <span class="level-sign__number">99</span>
+                  <span class="level-sign__signature">level</span>
+                  <svg class="level-sign__image">
+                    <circle class="level-sign__image-background" cx="57" cy="57" r="30"></circle>
+                    <circle class="level-sign__image-progress" cx="57" cy="57" r="30"></circle>
+                  </svg>
+                </div>
+              </div>
+              <button type="button" class="companion-card__invite-button">Позвать!</button>
+            </div>
+          </li>
+          <li class="companions-list__item">
+            <div class="companion-card">
+              <h3 class="companion-card__title">Петя Демин</h3>
+              <img src="https://via.placeholder.com/70x70" alt="Фото пользователя" class="companion-card__image"
+                width="70" height="70">
+              <span class="companion-card__likes">1500</span>
+              <ul class="hashtags">
+                <li class="hashtags__item"><a class="hashtags-item__link">#бургер</a></li>
+                <li class="hashtags__item"><a class="hashtags-item__link">#бар</a></li>
+                <li class="hashtags__item"><a class="hashtags-item__link">#футбол</a></li>
+                <li class="hashtags__item"><a class="hashtags-item__link">#концерт</a></li>
+                <li class="hashtags__item"><a class="hashtags-item__link">#крафт</a></li>
+              </ul>
+              <ul class="visit-wishlist">
+                <li class="visit-wishlist__item"><a class="visit-wishlist__item-link">Бельгия</a></li>
+                <li class="visit-wishlist__item"><a class="visit-wishlist__item-link">Чехия</a></li>
+              </ul>
+              <ul class="transport">
+                <li class="transport__item">
+                  <input type="checkbox" name="plane" class="transport__plane visually-hidden" multiple checked>
+                  <span class="transport__plane-icon"></span>
+                </li>
+                <li class="transport__item">
+                  <input type="checkbox" name="proper-bus" class="transport__bus visually-hidden" multiple checked>
+                  <span class="transport__bus-icon"></span>
+                </li>
+                <li class="transport__item">
+                  <input type="checkbox" name="bike" class=" transport__bike visually-hidden" multiple>
+                  <span class="transport__bike-icon"></span>
+                </li>
+                <li class="transport__item">
+                  <input type="checkbox" name="on-foot" class="transport__on-foot visually-hidden" multiple checked>
+                  <span class="transport__on-foot"></span>
+                </li>
+              </ul>
+              <div class="companion-card__level">
+                <span class="companion-card__level-text">левел:</span>
+                <div class="level-sign">
+                  <span class="level-sign__number">80</span>
+                  <span class="level-sign__signature">level</span>
+                  <svg class="level-sign__image">
+                    <circle class="level-sign__image-background" cx="57" cy="57" r="30"></circle>
+                    <circle class="level-sign__image-progress" cx="57" cy="57" r="30"></circle>
+                  </svg>
+                </div>
+              </div>
+              <button type="button" class="companion-card__invite-button">Позвать!</button>
+            </div>
+          </li>
+          <li class="companions-list__item">
+            <div class="companion-card">
+              <h3 class="companion-card__title">Марк Смолов</h3>
+              <img src="https://via.placeholder.com/70x70" alt="Фото пользователя" class="companion-card__image"
+                width="70" height="70">
+              <span class="companion-card__likes">170</span>
+              <ul class="hashtags">
+                <li class="hashtags__item"><a class="hashtags-item__link">#рэп</a></li>
+                <li class="hashtags__item"><a class="hashtags-item__link">#тату</a></li>
+                <li class="hashtags__item"><a class="hashtags-item__link">#хайпбист</a></li>
+                <li class="hashtags__item"><a class="hashtags-item__link">#кроссовки</a></li>
+                <li class="hashtags__item"><a class="hashtags-item__link">#суприм</a></li>
+              </ul>
+              <ul class="visit-wishlist">
+                <li class="visit-wishlist__item"><a class="visit-wishlist__item-link">США</a></li>
+                <li class="visit-wishlist__item"><a class="visit-wishlist__item-link">Австралия</a></li>
+                <li class="visit-wishlist__item"><a class="visit-wishlist__item-link">Доминика</a></li>
+              </ul>
+              <ul class="transport">
+                <li class="transport__item">
+                  <input type="checkbox" name="plane" class="transport__plane visually-hidden" multiple checked>
+                  <span class="transport__plane-icon"></span>
+                </li>
+                <li class="transport__item">
+                  <input type="checkbox" name="proper-bus" class="transport__bus visually-hidden" multiple>
+                  <span class="transport__bus-icon"></span>
+                </li>
+                <li class="transport__item">
+                  <input type="checkbox" name="bike" class=" transport__bike visually-hidden" multiple checked>
+                  <span class="transport__bike-icon"></span>
+                </li>
+                <li class="transport__item">
+                  <input type="checkbox" name="on-foot" class="transport__on-foot visually-hidden" multiple>
+                  <span class="transport__on-foot"></span>
+                </li>
+              </ul>
+              <div class="companion-card__level">
+                <span class="companion-card__level-text">левел:</span>
+                <div class="level-sign">
+                  <span class="level-sign__number">25</span>
+                  <span class="level-sign__signature">level</span>
+                  <svg class="level-sign__image">
+                    <circle class="level-sign__image-background" cx="57" cy="57" r="30"></circle>
+                    <circle class="level-sign__image-progress" cx="57" cy="57" r="30"></circle>
+                  </svg>
+                </div>
+              </div>
+              <button type="button" class="companion-card__invite-button">Позвать!</button>
+            </div>
+          </li>
+          <li class="companions-list__item">
+            <div class="companion-card">
+              <h3 class="companion-card__title">Лариса Роговая</h3>
+              <img src="https://via.placeholder.com/70x70" alt="Фото пользователя" class="companion-card__image"
+                width="70" height="70">
+              <span class="companion-card__likes">23</span>
+              <ul class="hashtags">
+                <li class="hashtags__item"><a class="hashtags-item__link">#образование</a></li>
+                <li class="hashtags__item"><a class="hashtags-item__link">#карьера</a></li>
+                <li class="hashtags__item"><a class="hashtags-item__link">#учеба</a></li>
+                <li class="hashtags__item"><a class="hashtags-item__link">#линкедин</a></li>
+              </ul>
+              <ul class="visit-wishlist">
+                <li class="visit-wishlist__item"><a class="visit-wishlist__item-link">Великобритания</a></li>
+                <li class="visit-wishlist__item"><a class="visit-wishlist__item-link">Германия</a></li>
+              </ul>
+              <ul class="transport">
+                <li class="transport__item">
+                  <input type="checkbox" name="plane" class="transport__plane visually-hidden" multiple checked>
+                  <span class="transport__plane-icon"></span>
+                </li>
+                <li class="transport__item">
+                  <input type="checkbox" name="proper-bus" class="transport__bus visually-hidden" multiple checked>
+                  <span class="transport__bus-icon"></span>
+                </li>
+                <li class="transport__item">
+                  <input type="checkbox" name="bike" class=" transport__bike visually-hidden" multiple>
+                  <span class="transport__bike-icon"></span>
+                </li>
+                <li class="transport__item">
+                  <input type="checkbox" name="on-foot" class="transport__on-foot visually-hidden" multiple>
+                  <span class="transport__on-foot"></span>
+                </li>
+              </ul>
+              <div class="companion-card__level">
+                <span class="companion-card__level-text">левел:</span>
+                <div class="level-sign">
+                  <span class="level-sign__number">50</span>
+                  <span class="level-sign__signature">level</span>
+                  <svg class="level-sign__image">
+                    <circle class="level-sign__image-background" cx="57" cy="57" r="30"></circle>
+                    <circle class="level-sign__image-progress" cx="57" cy="57" r="30"></circle>
+                  </svg>
+                </div>
+              </div>
+              <button type="button" class="companion-card__invite-button">Позвать!</button>
+            </div>
+          </li>
+        </ul>
+        <button class="companions__show-more">Показать еще</button>
+      </section>
+      <div class="page-navigation">
+        <button class="page-navigation__previous-page">svg</button>
+        <button class="page-navigation__next-page">svg</button>
+      </div>
     </div>
   </main>
   <footer class="page-footer">

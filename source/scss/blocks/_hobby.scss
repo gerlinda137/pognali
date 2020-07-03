@@ -1,0 +1,44 @@
+.hobby {
+  display: flex;
+  flex-direction: column;
+
+  &--hidden {
+    display: none;
+  }
+}
+
+.hobby__label {
+  display: flex;
+  align-content: center;
+  position: relative;
+  padding-left: 26px;
+  margin-bottom: 12px;
+
+  &:last-child {
+    margin-bottom: 20px;
+  }
+}
+
+.hobby__input {
+  position: absolute;
+  opacity: 0;
+  width: 1em;
+  height: 1em;
+}
+
+.hobby__checkbox {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 1px;
+  top: 0;
+}
+
+.hobby__input:checked+.hobby__checkbox {
+  background-image: url(../../img/tick.svg);
+  background-size: 9px;
+  background-repeat: no-repeat;
+  background-position: center;
+}

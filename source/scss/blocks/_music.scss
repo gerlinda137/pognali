@@ -1,0 +1,45 @@
+.music {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3px;
+
+  &--hidden {
+    display: none;
+  }
+}
+
+.music__label {
+  display: flex;
+  align-content: center;
+  position: relative;
+  padding-left: 26px;
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 18px;
+  }
+}
+
+.music__input {
+  position: absolute;
+  opacity: 0;
+  width: 1em;
+  height: 1em;
+}
+
+.music__checkbox {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 1px;
+  top: 0;
+}
+
+.music__input:checked+.music__checkbox {
+  background-image: url(../../img/tick.svg);
+  background-size: 9px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
