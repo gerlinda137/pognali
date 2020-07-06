@@ -2,6 +2,137 @@
   display: flex;
   flex-direction: column;
   position: relative;
+
+  &--catalog {
+    background-color: $white;
+    border-radius: 20px;
+
+    .companion__avatar {
+      border-radius: 50%;
+    }
+
+    .companion__main-container {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .companion__header {
+      display: flex;
+      margin-top: 16px;
+      margin-bottom: 12px;
+    }
+
+
+    .companion__name-distance-wrapper {
+      display: flex;
+      flex-direction: column;
+      margin-top: -3px;
+      margin-left: 14px;
+    }
+
+    .companion__name {
+      font-size: 20px;
+      line-height: 20px;
+      width: 78px;
+      flex-wrap: wrap;
+      text-align: left;
+      margin-bottom: 8px;
+    }
+
+    .companion__name-container--offline {
+
+      &::before {
+        left: 138px;
+        top: 0;
+        width: 6px;
+        height: 6px;
+      }
+    }
+
+    .companion__distance {
+      font-family: $font;
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 21px;
+      color: $dark-two;
+      text-transform: uppercase;
+    }
+
+    .companion__inner-content-container {
+      display: flex;
+      flex-direction: column;
+      padding-left: 6px;
+      position: relative;
+    }
+
+    .companion__category-subtitle {
+      margin: 0;
+      font-family: $font;
+      font-size: 15px;
+      line-height: 18px;
+      color: $greyish-brown;
+    }
+
+    .hashtags {
+      justify-content: left;
+      margin-left: 0;
+      margin-bottom: 13px;
+    }
+
+    .hashtags__item {
+      font-family: $font;
+      font-size: 15px;
+      line-height: 18px;
+    }
+
+    .companion__category-subtitle {
+      position: relative;
+      background-color: $white;
+
+      &::before {
+        content: "";
+        width: 20px;
+        height: 1px;
+        background-color: $pale-grey;
+        position: absolute;
+        top: 10px;
+        left: -33px;
+      }
+
+      &::after {
+        content: "";
+        width: 140px;
+        height: 1px;
+        background-color: $pale-grey;
+        position: absolute;
+        top: 10px;
+        right: -20px;
+      }
+
+      &--transport {
+        &:after {
+          width: 90px;
+          top: 10px;
+          right: 55px;
+        }
+      }
+
+      &--level {
+        right: -182px;
+        top: -18px;
+        width: 42px;
+
+        &::before {
+          content: none;
+        }
+
+        &::after {
+          width: 10px;
+        }
+      }
+    }
+
+  }
 }
 
 .companion__container {

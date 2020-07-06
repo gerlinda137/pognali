@@ -21,6 +21,26 @@
     margin-bottom: 20px;
     flex-wrap: nowrap;
   }
+
+  &--catalog-user-profile {
+    margin-left: 0;
+    flex-wrap: nowrap;
+
+    .transport__svg {
+      height: 16px;
+      text-align: center;
+    }
+
+    .transport__item {
+      width: 33px;
+      height: 30px;
+      background-color: $pale-grey;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 }
 
 .transport__icon {
@@ -37,6 +57,10 @@
   height: 21px;
   opacity: 0.15;
   fill: $dark-slate-blue;
+
+  &--active {
+    opacity: 1;
+  }
 
   &--user-profile {
     height: 16px;

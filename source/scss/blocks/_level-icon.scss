@@ -30,6 +30,14 @@
       width: 50px;
     }
   }
+
+  &--catalog {
+
+    .level-icon__number {
+      color: $dark-slate-blue;
+      border: none;
+    }
+  }
 }
 
 .level-icon__svg {

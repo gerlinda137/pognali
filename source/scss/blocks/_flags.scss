@@ -8,6 +8,27 @@
   list-style: none;
   padding-left: 0;
 
+  &--catalog {
+    flex-direction: column;
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 3px;
+
+    .flags__item {
+      display: flex;
+      margin-bottom: 10px;
+    }
+
+    .flags__item-text {
+      font-family: $font;
+      font-size: 15px;
+      line-height: 18px;
+      font-weight: 500;
+      color: $dark-slate-blue;
+      text-transform: uppercase;
+      margin-left: 13px;
+    }
+  }
 
 }
 
