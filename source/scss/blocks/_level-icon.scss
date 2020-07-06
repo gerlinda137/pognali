@@ -32,10 +32,22 @@
   }
 
   &--catalog {
+    top: 161px;
+    left: 151px;
 
     .level-icon__number {
       color: $dark-slate-blue;
       border: none;
+      position: absolute;
+      top: 19px;
+    }
+
+    .level-icon__svg-progress {
+      stroke-width: 2px;
+    }
+
+    .level-icon__svg-progress--99 {
+      stroke-dasharray: 147;
     }
   }
 }
