@@ -1,0 +1,30 @@
+.page-navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 270px;
+  margin: 0 auto;
+  margin-bottom: 65px;
+}
+
+.page-navigation__button {
+  @include reset-default-button-style;
+  background-color: $white;
+  width: 135px;
+  height: 50px;
+
+  &--previous {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-right: 2px solid $pale-grey;
+  }
+
+  &--next {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  svg {
+    width: 10px;
+    height: 20px;
+  }
+}

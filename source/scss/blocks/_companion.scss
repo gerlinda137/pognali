@@ -18,10 +18,33 @@
 
     .companion__header {
       display: flex;
+      position: relative;
       margin-top: 16px;
       margin-bottom: 12px;
     }
 
+    .companion__like-button {
+      @include reset-default-button-style;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 39px;
+      left: 48px;
+      width: 31px;
+      height: 31px;
+      border-radius: 50%;
+      background-color: $pale-grey;
+
+      svg {
+        width: 13px;
+        height: 11px;
+      }
+
+      &--active {
+        background-color: $very-light-pink-two;
+      }
+    }
 
     .companion__name-distance-wrapper {
       display: flex;
@@ -39,15 +62,27 @@
       margin-bottom: 8px;
     }
 
-    .companion__name-container--offline {
+    .companion__name-container {
+      &--offline {
+        &::before {
+          left: 138px;
+          top: 0;
+          width: 6px;
+          height: 6px;
+        }
+      }
 
-      &::before {
-        left: 138px;
-        top: 0;
-        width: 6px;
-        height: 6px;
+      &--online {
+        &::before {
+          left: 138px;
+          top: 0;
+          width: 6px;
+          height: 6px;
+        }
       }
     }
+
+
 
     .companion__distance {
       font-family: $font;
@@ -184,4 +219,18 @@
     margin-top: 12px;
     margin-right: 10px;
   }
+}
+
+.companion__invite-button {
+  @include reset-default-button-style;
+  display: block;
+  margin-bottom: 22px;
+  border-radius: 20px;
+  background-color: $light-gold;
+  font-family: $font;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 5px 79px;
 }

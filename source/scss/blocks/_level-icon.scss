@@ -32,8 +32,8 @@
   }
 
   &--catalog {
-    top: 161px;
-    left: 151px;
+    top: -44px;
+    left: 145px;
 
     .level-icon__number {
       color: $dark-slate-blue;
@@ -48,6 +48,18 @@
 
     .level-icon__svg-progress--99 {
       stroke-dasharray: 147;
+    }
+
+    .level-icon__svg-progress--80 {
+      stroke-dasharray: 131;
+    }
+
+    .level-icon__svg-progress--25 {
+      stroke-dasharray: 70;
+    }
+
+    .level-icon__svg-progress--50 {
+      stroke-dasharray: 80;
     }
   }
 }

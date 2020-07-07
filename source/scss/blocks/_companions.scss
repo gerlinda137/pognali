@@ -21,6 +21,10 @@
 
   &--catalog {
     background: none;
+
+    &::after {
+      content: none;
+    }
   }
 }
 
@@ -49,4 +53,28 @@
 .companions__description--bold {
   font-weight: bold;
   line-height: 22px;
+}
+
+.companions__show-more {
+  @include reset-default-button-style;
+  font-family: $font;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $dark-slate-blue;
+  position: relative;
+  text-align: center;
+  padding-left: 36px;
+  margin-bottom: 20px;
+
+  &::before {
+    content: "";
+    background-image: url(../../img/show-more-plus.svg);
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 60px;
+    top: 7px;
+  }
 }
